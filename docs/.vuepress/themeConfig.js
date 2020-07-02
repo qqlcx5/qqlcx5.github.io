@@ -1,0 +1,54 @@
+const path = require('path');
+const rootpath = path.dirname(__dirname);
+const utils = require('./utils/index.js');
+const filehelper = require('./utils/initPage.js');
+
+const themeConfig = {
+  nav: [
+    {
+      text: '面试',
+      link: '/Interview/',
+    },
+    {
+      text: 'JavaScript',
+      link: '/JavaScript/',
+    },
+    {
+      text: 'Vuejs',
+      link: '/vue/',
+    },
+    {
+      text: 'CSS',
+      link: '/css/',
+    },
+    {
+      text: '其它',
+      ariaLabel: 'Menu',
+      items: [
+        { text: 'VuePress', link: '/other/vuepress/' },
+        { text: '开发工具', link: '/other/ide/' }
+      ]
+    },
+    {
+      text: '主页',
+      ariaLabel: 'Menu',
+      items: [
+        { text: '主页一', link: '/404/' },
+        { text: '主页二', link: '/404/Personal' }
+      ]
+    },
+  ],
+  
+  sidebar: {
+    '/JavaScript/': concatJs(),
+  },
+};
+
+// JavaScript
+function concatJs() {
+  const arr = utils.genSidebar( 'JStst', filehelper.getFileName(rootpath + '/JavaScript/'), false);
+  arr.push(...utils.genSidebar('JStst222',filehelper.getFileName(rootpath + '/JavaScript/vue/', 'vue/'),false));
+  return arr;
+}
+
+module.exports = themeConfig;
