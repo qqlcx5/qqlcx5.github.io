@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.jpg
+heroImage: /icons/logo.jpg
 heroText: 廖纯鑫博客
 tagline: 一个平平凡凡的小前端。
 actionText: 点击开始 →

@@ -1,6 +1,6 @@
 const path = require('path');
 const rootpath = path.dirname(__dirname);
-const utils = require('./utils/index.js');
+const utils = require('./utils/index');
 const filehelper = require('./utils/initPage.js');
 
 const themeConfig = {

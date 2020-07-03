@@ -1,5 +1,7 @@
 # JavaScript
 
+## 个人博客刚搭建起来，很多文章还未处理后续补上。
+
 :tada: :100:
 
 ::: tip 提示
@@ -14,6 +16,3 @@ this is a JavaScript
 this is a JavaScript
 :::
 
-```js
-<script>console.log('Hello world JavaScript3')</script>
-```
