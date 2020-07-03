@@ -1,6 +1,4 @@
-# JavaScript3
-
-:tada: :100:
+# JavaScript2
 
 ::: tip 提示
 this is a JavaScript3
@@ -14,6 +12,3 @@ this is a JavaScript3
 this is a JavaScript3
 :::
 
-```js
-<script>console.log('Hello world JavaScript3')</script>
-```
