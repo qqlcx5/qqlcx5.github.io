@@ -7,13 +7,13 @@ git push git@gitee.com:qqlcx5/vuePressCode.git master
 npm run docs:build && cd docs/.vuepress/dist
 
 # 码云
-git init
-git add -A
-git commit -m 'deploy'
-git push -f git@gitee.com:qqlcx5/vuepress.git master
+# git init
+# git add -A
+# git commit -m 'deploy'
+# git push -f git@gitee.com:qqlcx5/vuepress.git master
 
 # github
-rm -rf .git
+# rm -rf .git
 git init
 git add -A
 git commit -m 'deploy'
