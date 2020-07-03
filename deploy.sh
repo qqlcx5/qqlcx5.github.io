@@ -10,7 +10,7 @@ npm run docs:build && cd docs/.vuepress/dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@gitee.com:qqlcx5/qqlcx5.git master
+git push -f git@gitee.com:qqlcx5/vuepress.git master
 
 # github
 rm -rf .git
