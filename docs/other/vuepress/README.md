@@ -306,7 +306,7 @@ module.exports = {
     
 
 ## 部署
-
+在项目目录下创建一个 `deploy.sh`文件，复制以下代码。
 ```
 # 确保脚本抛出遇到的错误
 # 上传vuepress源码及文章到码云备份
@@ -332,6 +332,21 @@ git commit -m 'deploy'
 git push -f git@github.com:qqlcx5/qqlcx5.github.io.git master
 cd -
 ```
+仓库地址自行更换。
+
+window用户双击`deploy.sh` 文件便会将上传文章到码云备份，及部署到GitHub Page。
+
+```
+# 在终端且进入vuepress项目中输入：
+
+./deploy.sh
+
+# 如果出现permission denied，就重新设置一下权限再运行，
+
+chmod 777 deploy.sh
+
+./deploy.sh
+```
 
 ## 总结
 
@@ -340,3 +355,10 @@ cd -
 ## 订阅
 
 ![WeChat](https://i.loli.net/2020/07/03/vHc4ayFOBnV6Dmx.png)
+
+
+
+
+
+
+
