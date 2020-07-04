@@ -8,7 +8,7 @@ module.exports = {
     'cat': {},
     '@vssue/vuepress-plugin-vssue': {
       // set `platform` rather than `api`
-      platform: 'github',
+      platform: 'github-v4',
       owner: 'qqlcx5',
       repo: 'qqlcx5.github.io',
       clientId: '012e6ab702f2bc7fe841',
