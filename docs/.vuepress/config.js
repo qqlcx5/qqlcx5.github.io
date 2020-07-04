@@ -6,6 +6,7 @@ module.exports = {
   themeConfig,
   plugins: {
     'cat': {},
+    '@vuepress/google-analytics':{'ga': 'UA-171545170-1' },
     '@vssue/vuepress-plugin-vssue': {
       // set `platform` rather than `api`
       platform: 'github-v4',

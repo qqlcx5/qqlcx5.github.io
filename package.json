@@ -11,6 +11,7 @@
   "author": "lcx",
   "license": "ISC",
   "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.5.2",
     "vuepress": "^1.5.2"
   },
   "dependencies": {
