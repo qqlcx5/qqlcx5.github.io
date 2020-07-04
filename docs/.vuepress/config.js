@@ -6,9 +6,9 @@ module.exports = {
   themeConfig,
   plugins: {
     'cat': {},
+    'table-of-contents': {},
     '@vuepress/google-analytics':{'ga': 'UA-171545170-1' },
     '@vssue/vuepress-plugin-vssue': {
-      // set `platform` rather than `api`
       platform: 'github-v4',
       owner: 'qqlcx5',
       repo: 'qqlcx5.github.io',

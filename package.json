@@ -12,9 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.5.2",
-    "vuepress": "^1.5.2"
-  },
-  "dependencies": {
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-table-of-contents": "^1.1.6",
     "@vssue/api-github-v4": "^1.4.0",
     "@vssue/vuepress-plugin-vssue": "^1.4.6",
     "vuepress-plugin-cat": "^1.0.3"
