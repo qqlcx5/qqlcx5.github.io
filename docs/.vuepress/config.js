@@ -6,7 +6,6 @@ module.exports = {
   themeConfig,
   plugins: {
     'cat': {},
-    'table-of-contents': {},
     '@vuepress/google-analytics':{'ga': 'UA-171545170-1' },
     '@vssue/vuepress-plugin-vssue': {
       platform: 'github-v4',
