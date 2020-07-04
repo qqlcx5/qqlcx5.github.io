@@ -15,6 +15,6 @@
     "@vssue/vuepress-plugin-vssue": "^1.4.6",
     "@vuepress/plugin-google-analytics": "^1.5.2",
     "vuepress": "^1.5.2",
-    "vuepress-plugin-cat": "^1.0.3",
+    "vuepress-plugin-cat": "^1.0.3"
   }
 }
