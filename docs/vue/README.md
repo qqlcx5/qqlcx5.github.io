@@ -2,4 +2,4 @@
 
 vue Vssue
 
-  <Vssue :title="$title" />
+<Vssue :title="$title" />

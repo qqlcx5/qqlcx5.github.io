@@ -1,4 +1,4 @@
 
 # CSS
 
-css1
+<Vssue :title="$title" />
