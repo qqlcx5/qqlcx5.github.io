@@ -1,3 +1,5 @@
 # vue
 
-vue222
+vue Vssue
+
+  <Vssue :title="$title" />
