@@ -12,5 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "vuepress": "^1.5.2"
+  },
+  "dependencies": {
+    "@vssue/api-github-v4": "^1.4.0",
+    "@vssue/vuepress-plugin-vssue": "^1.4.6",
+    "vuepress-plugin-cat": "^1.0.3"
   }
 }
