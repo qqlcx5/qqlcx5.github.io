@@ -1,5 +1,5 @@
 # vue
 
-vue Vssue
+vue Vssue 部署
 
 <Vssue :title="$title" />
