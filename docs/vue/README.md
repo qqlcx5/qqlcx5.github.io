@@ -1,5 +1,5 @@
 # vue
 
-vue Vssue 部署成功
+vue Vssue 自动部署
 
 <Vssue :title="$title" />
