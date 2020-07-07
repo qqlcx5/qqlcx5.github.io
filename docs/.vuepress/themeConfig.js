@@ -4,6 +4,8 @@ const utils = require('./utils/index');
 const filehelper = require('./utils/initPage.js');
 
 const themeConfig = {
+  editLinks: true,
+  smoothScroll: true,
   nav: [
     {
       text: '面试',

@@ -2,6 +2,8 @@
 sidebar: auto
 ---
 
+[[toc]]
+
 # VuePress 搭建个人博客
 
 ## 项目的亮点
