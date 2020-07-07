@@ -44,6 +44,7 @@ const themeConfig = {
   sidebar: {
     '/JavaScript/': concatJs(),
     '/vue/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/vue/'), false),
+    '/other/ide/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/other/ide/'), false),
   },
 };
 
