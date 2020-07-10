@@ -18,7 +18,7 @@ const plugins = {
   '@vuepress-reco/vuepress-plugin-bgm-player': {
     audios: [
       { name: 'Stories', artist: '黒石ひとみ', url: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/Stories.mp3', cover: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/Stories.jpg' },
-      { name: 'カワキヲアメク', artist: '美波', url: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/%E3%82%AB%E3%83%AF%E3%82%AD%E3%83%B2%E3%82%A2%E3%83%A1%E3%82%AF.mp3', cover: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/1.png' },
+      { name: 'カワキヲアメク', artist: '美波', url: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/1.mp3', cover: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/1.png' },
       { name: '轻音乐', artist: '轻音乐', url: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/1.mp3', cover: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/1.png' },
     ],
     autoShrink: true, //默认缩小
