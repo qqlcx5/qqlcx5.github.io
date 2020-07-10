@@ -34,7 +34,7 @@ const plugins = {
         artist: '黒石ひとみ',
         url: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/Stories.mp3',
         cover: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/Stories.jpg'
-      },
+      }
     ],
     autoShrink: true, //默认缩小
     shrinkMode: 'mini' //迷你模式
