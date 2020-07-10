@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /icons/logo.jpg
+heroImage: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/logo.jpg'
 heroText: 廖纯鑫博客
 tagline: 一个平平凡凡的小前端。
 actionText: 点击开始 →
