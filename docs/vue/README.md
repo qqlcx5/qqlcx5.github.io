@@ -1,6 +1,6 @@
 # vue
 
-vue Vssue 自动部署
+vue Vssue
 
 test [vue轮播图](vue轮播图)
 
