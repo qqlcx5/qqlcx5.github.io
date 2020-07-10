@@ -44,7 +44,7 @@ export default {
 .HomeLayout::before {
   height: 100vh;
   width: 100%;
-  background: url("/images/homebg.jpg") no-repeat;
+  background: url("https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/home_bg.jpg") no-repeat;
   background-size: cover;
   content: "";
   position: absolute;
@@ -119,7 +119,7 @@ export default {
   width: 100%;
   height: 100%;
   border-radius: 6px;
-  background: url("/images/logo.png") no-repeat center;
+  background: url('https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/1.png') no-repeat center;
   background-size: cover;
   content: "";
   position: absolute;
