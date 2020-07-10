@@ -120,4 +120,4 @@ Windows/Linux: F2
 
 ## 订阅
 
-![WeChat](https://i.loli.net/2020/07/03/vHc4ayFOBnV6Dmx.png)
+![WeChat](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/WeChat.png)
