@@ -32,6 +32,8 @@ GitHub Actions 是 GitHub 的持续集成服务，于2018年10月推出。
 
 那么开始打造我们的 GitHub Actions。
 
+## GitHub Actions
+
 ### 生成个人访问令牌token
 
 [跳转到个人访问令牌页面](https://github.com/settings/tokens)
