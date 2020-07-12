@@ -28,7 +28,8 @@ const themeConfig = {
       ariaLabel: 'Menu',
       items: [
         { text: 'VuePress', link: '/other/vuepress/' },
-        { text: '开发工具', link: '/other/ide/' }
+        { text: '开发工具', link: '/other/ide/' },
+        { text: 'git使用', link: '/other/git/' }
       ]
     },
     {
@@ -45,6 +46,7 @@ const themeConfig = {
     '/JavaScript/': concatJs(),
     '/vue/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/vue/'), false),
     '/other/ide/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/other/ide/'), false),
+    '/other/git/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/other/git/'), false),
   },
 };
 
