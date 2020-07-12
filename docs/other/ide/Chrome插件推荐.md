@@ -1,6 +1,3 @@
----
-sidebar: auto
----
 
 # Chrome插件推荐
 

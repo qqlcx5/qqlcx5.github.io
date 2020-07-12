@@ -1,6 +1,3 @@
----
-sidebar: auto
----
 
 # Mac常用软件推荐
 
