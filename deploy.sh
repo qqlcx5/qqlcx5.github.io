@@ -7,15 +7,17 @@ set -e
 npm run docs:build && cd docs/.vuepress/dist
 
 # github
-# git init
-# git add -A
-# git commit -m 'deploy'
-# git push -f git@github.com:qqlcx5/qqlcx5.github.io.git master
-
-# 码云
-# rm -rf .git
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@gitee.com:qqlcx5/qqlcx5.git master
+git remote add origin git@github.com:qqlcx5/qqlcx5.github.io.git
+git remote set-url --add origin git@gitee.com:qqlcx5/qqlcx5.git
+git push -f master
+
+# 码云
+# rm -rf .git
+# git init
+# git add -A
+# git commit -m 'deploy'
+# git push -f git@gitee.com:qqlcx5/qqlcx5.git master
 cd -
