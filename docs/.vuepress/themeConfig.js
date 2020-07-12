@@ -29,7 +29,7 @@ const themeConfig = {
       items: [
         { text: 'VuePress', link: '/other/vuepress/' },
         { text: '开发工具', link: '/other/ide/' },
-        { text: 'git使用', link: '/other/git/' }
+        { text: 'GitHub黑科技', link: '/other/github/' }
       ]
     },
     {
@@ -46,7 +46,7 @@ const themeConfig = {
     '/JavaScript/': concatJs(),
     '/vue/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/vue/'), false),
     '/other/ide/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/other/ide/'), false),
-    '/other/git/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/other/git/'), false),
+    '/other/github/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/other/github/'), false),
   },
 };
 
