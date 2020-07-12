@@ -355,7 +355,6 @@ chmod 777 deploy.sh
 
 ## 订阅
 
-[个人博客](https://qqlcx5.github.io/)
-
 ![WeChat](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/WeChat.png)
+
 
