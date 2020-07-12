@@ -122,4 +122,10 @@ jobs:
 
 正常来说没什么问题。享受 GitHub Actions 带来的愉快体验吧~
 
+## 订阅
 
+![WeChat](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/WeChat.png)
+
+参考链接：
+
+- [使用 GitHub Actions 自动部署博客](https://vuepress-theme-reco.recoluan.com/views/other/github-actions.html#%E8%AE%BE%E7%BD%AE-secrets)
