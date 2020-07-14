@@ -1,6 +1,6 @@
 # GitHub + jsDelivr + PicGo 打造稳定快速、高效免费图床
 
-![git](media/15941321303313/15941322426781.jpg)
+![git](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200710230327.jpg)
 
 ## 目前图床优劣
 
@@ -16,13 +16,13 @@
 1. 新建 GitHub 仓库
 2. 创建个人访问令牌
 3. 配置 PicGo 设置
-4. 上传图片，获取jsDelivr 地址
+4. 上传图片，转成 jsDelivr 地址
 
 ### 新建 GitHub 仓库
 
 创建一个仓库，用来存放图片。
 
-![-w1059](media/15941321303313/15941326656136.jpg)
+![-w1059](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200710230340.jpg)
 
 ### 生成个人访问令牌Token
 
@@ -30,16 +30,16 @@
 
 作用：授权仓库的操作权限，通过API实现自动化。
 
-![-w1139](media/15941321303313/15941330287830.jpg)
+![-w1139](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200710230334.jpg)
 
 然后填写 `Token` 描述，勾选 repo、write、read然后点击 `Generate token` 生成一个 `Token`
 
-![token](media/15941321303313/15945467642127.jpg)
+![token](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200714002302.jpg)
 
 
 因为 Token 只会显示一次，所以先保存笔记本等。
 
-![-w1030](media/15941321303313/15941331716350.jpg)
+![-w1030](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200710230337.jpg)
 
 ### 配置 PicGo
 [前往PicGo官网](https://github.com/Molunerfinn/picgo/releases)
@@ -55,12 +55,12 @@
 1. 设定自定义域名：它的的作用是，在图片上传后，PicGo 会按照自定义域名+上传的图片名的方式生成访问链接，放到粘贴板上。
 `https://cdn.jsdelivr.net/gh/用户名/仓库名`
 
-![-w800](media/15941321303313/15941334563799.jpg)
+![-w800](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200710230329.jpg)
 
 ### 上传图片测试
 上传图片后，在相册可以看到刚才的图片，点击复制的URL就是通过`jsdelivr` CDN加速的。
 
-![-w800](media/15941321303313/15941337243412.jpg)
+![-w800](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200710230348.jpg)
 
 此外 PicGo 还有相册功能，可以对已上传的图片进行删除，修改链接等快捷操作，PicGo 还可以生成不同格式的链接、支持批量上传、快捷键上传、自定义链接格式、上传前重命名等，更多功能自己去探索吧！
 
@@ -75,7 +75,7 @@
 
 ## 订阅
 
-![WeChat](https://i.loli.net/2020/07/03/vHc4ayFOBnV6Dmx.png)
+![WeChat](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/WeChat.png)
 
 参考链接： 
 
