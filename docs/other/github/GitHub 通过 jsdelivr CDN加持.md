@@ -1,4 +1,4 @@
-# jsdelivr CDN加速 GitHub
+# GitHub 通过 jsdelivr CDN加持
 
 两种引用方式：
 
@@ -66,3 +66,6 @@ github.com`替换成cdn.jsdelivr.net/gh
 已发布的版本不会受到仓库内容变化的影响
 如何按版本号引用。链接相对稳定也是我特别推荐的原因。
 
+## 订阅
+
+![WeChat](https://i.loli.net/2020/07/03/vHc4ayFOBnV6Dmx.png)

@@ -1,4 +1,4 @@
-# 解决GitHub下载慢的有效方法
+# 解决GitHub下载慢的方法
 
 目前已知：
 
@@ -18,15 +18,15 @@
 ## 码云
 登录码云官网后点击 `+` 选择从GitHub导入仓库。
 
-![-w477](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200712161533.jpg)
+![-w477](media/15941272697071/15941276183498.jpg)
 
 然后进入这个页面。
 
-![-w750](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200712161535.jpg)
+![-w750](media/15941272697071/15941279683360.jpg)
 
 导入成功，复制url或者地址，用法和github一样。
 
-![-w1052](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200712161542.jpg)
+![-w1052](media/15941272697071/15941280717084.jpg)
 
 ## cnpmjs镜像（已失效）
 
@@ -41,7 +41,7 @@ git clone https://github.com.cnpmjs.org/qqlcx5/editor.git
 ```
 
 下载效果如下并非理想，感觉然并卵。
-![-w570](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200712161539.jpg)
+![-w570](media/15941272697071/15941284882760.jpg)
 
 ## hosts
 
@@ -121,14 +121,16 @@ https://github.com/qqlcx5/editor
 GitClone
 git clone https://gitclone.com/github.com/qqlcx5/editor
 ```
-大概在10几秒后下载完成，觉得不错。
+大概在10秒内下载完成，觉得不错。
 
-### 方法二修改git配置
+### 方法二 修改git配置
 ```
 git config --global url."https://gitclone.com/github.com/".insteadOf https://github.com/
 ```
-在这补充一点，官网推荐`git config --global url.“https://gitclone.com/".insteadOf https://`，个人觉得不是特别严谨，毕竟国内还有很多仓库，如果上面这样写的话，估计也会走`gitclone`通道，毕竟服务器在国内下载速度还可以没必要。
+在这补充一点，官网推荐 `git config --global url.“https://gitclone.com/".insteadOf https://`，个人觉得不是友好，毕竟还有很多仓库，如果上面这样写的话，估计也会走`gitclone`通道。估计引发XX问题。
 
-[gitclone官网](https://gitclone.com/)
+了解更多GitClone点击[前往gitclone官网](https://gitclone.com/)
 
+## 订阅
 
+![WeChat](https://i.loli.net/2020/07/03/vHc4ayFOBnV6Dmx.png)
