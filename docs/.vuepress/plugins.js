@@ -4,7 +4,7 @@ const plugins = {
     clean: true
   },
   '@vuepress/pwa': {
-      serviceWorker: true, //用于缓存页面的内容以供离线使用
+      serviceWorker: false, //用于缓存页面的内容以供离线使用
       updatePopup: true
   },
   '@vuepress-reco/vuepress-plugin-back-to-top': {
