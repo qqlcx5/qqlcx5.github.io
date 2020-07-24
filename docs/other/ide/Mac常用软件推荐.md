@@ -172,8 +172,6 @@ PopClip 最基本的功能就是复制粘贴的使用，除此之外，再无拓
 
 Fliqlo 是一款非常简洁的Mac OS设备时钟屏保应用程序。
 
-![Fliqlo](media/15878855456290/15878899885318.jpg)
-
 [官网](https://fliqlo.com/#/screensaver) https://fliqlo.com/#/screensaver
 
 **Aerial**
