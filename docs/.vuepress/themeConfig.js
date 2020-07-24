@@ -27,8 +27,8 @@ const themeConfig = {
       text: '其它',
       ariaLabel: 'Menu',
       items: [
-        { text: 'VuePress', link: '/other/vuepress/' },
         { text: '开发工具', link: '/other/ide/' },
+        { text: 'VuePress', link: '/other/vuepress/' },
         { text: 'GitHub黑科技', link: '/other/github/' }
       ]
     },
@@ -45,9 +45,9 @@ const themeConfig = {
   sidebar: {
     '/JavaScript/': concatJs(),
     '/vue/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/vue/'), false),
-    '/other/vuepress/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/other/vuepress/'), false),
-    '/other/ide/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/other/ide/'), false),
-    '/other/github/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/other/github/'), false),
+    '/other/vuepress/': utils.genSidebar( 'VuePress', filehelper.getFileName(rootpath + '/other/vuepress/'), false),
+    '/other/ide/': utils.genSidebar( '开发工具', filehelper.getFileName(rootpath + '/other/ide/'), false),
+    '/other/github/': utils.genSidebar( 'GitHub', filehelper.getFileName(rootpath + '/other/github/'), false),
   },
 };
 
