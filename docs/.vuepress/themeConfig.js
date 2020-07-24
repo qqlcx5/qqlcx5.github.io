@@ -6,6 +6,7 @@ const filehelper = require('./utils/initPage.js');
 const themeConfig = {
   editLinks: true,
   smoothScroll: true,
+  lastUpdated: '最后更新时间', //最后更新时间
   nav: [
     {
       text: '面试',
