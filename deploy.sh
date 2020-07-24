@@ -10,10 +10,3 @@ git remote set-url --add origin git@gitee.com:qqlcx5/qqlcx5.git
 git push -f --all
 cd -
 
-# 码云(土方法 一个个仓库慢慢传)
-# rm -rf .git
-# git init
-# git add -A
-# git commit -m 'deploy'
-# git push -f git@gitee.com:qqlcx5/qqlcx5.git master
-
