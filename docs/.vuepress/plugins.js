@@ -1,7 +1,7 @@
 const plugins = {
   '@vuepress-reco/vuepress-plugin-kan-ban-niang': {
     theme: ['koharu', 'miku', 'z16', 'wanko'],
-    clean: true
+    clean: false
   },
   '@vuepress/pwa': {
       serviceWorker: true, //用于缓存页面的内容以供离线使用
