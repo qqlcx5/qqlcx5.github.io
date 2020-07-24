@@ -1,5 +1,7 @@
 # VSCode常用快捷键
 
+## 前言
+
 摘抄了一些个人觉得实用的快捷键。
 
 ### 快速打开文件「Quick open」
@@ -109,11 +111,11 @@ Mac: F2
 Windows/Linux: F2
 ```
 
-参考：
-
-[VSCode常用快捷键大全｜VSCode高级玩家宝典之第一篇
-](https://juejin.im/post/5e9bd1a46fb9a03c4d410b0d)
-
 ## 订阅
 
 ![WeChat](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/WeChat.png)
+
+参考链接：
+
+[https://juejin.im/post/5e9bd1a46fb9a03c4d410b0d](https://juejin.im/post/5e9bd1a46fb9a03c4d410b0d)
+
