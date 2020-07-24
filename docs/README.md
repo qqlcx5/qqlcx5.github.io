@@ -4,7 +4,7 @@ heroImage: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/logo.jpg'
 heroText: 廖纯鑫博客
 tagline: 从零开始的前端之路。
 actionText: 点击开始 →
-actionLink: /JavaScript/
+actionLink: /vue/
 features:
   - title: CV前端工程师
     details: 自学前端、技术一般般、瞎琢磨感兴趣的东西。
