@@ -14,7 +14,7 @@ iTerm2是Terminal的替代品，是iTerm的后继产品。它适用于MacOS 10.1
 
  我上传到蓝奏云，下载速度还不错。[前往蓝奏云下载](https://qqlcx5.lanzous.com/ibyghcf)
 
-> 如果下载主题等国外资料下不下来，可以尝试科学上网 + `Proxifier`
+> 如果下载以下资源下不下来，可以尝试科学上网配`Proxifier`就可以走VPS通道。
 
 ### 配置 Oh My Zsh
 
