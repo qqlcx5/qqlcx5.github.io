@@ -23,7 +23,15 @@
     </div>
   </div>
 </template>
-
+<script>
+export default {
+  name: 'HomeLayout',
+  data () {
+    return {}
+  },
+  methods: {}
+}
+</script>
 <style scoped>
 .HomeLayout {
   /* height: 100vh;

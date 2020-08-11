@@ -23,12 +23,3 @@ export const getSearchSuggest=(key)=>{
 export const getHotTalk=(id)=>{
     return axios.get(`https://blogme.top:3000/comment/music?id=${id}&limit=3`)
 }
-
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?4307620a9933a7900b655b578321c816";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-  console.log('_hmt_hmt_hmt_hmt');
-})();
