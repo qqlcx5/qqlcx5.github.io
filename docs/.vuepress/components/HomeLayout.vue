@@ -24,14 +24,15 @@
   </div>
 </template>
 <script>
-export default {
-  name: 'HomeLayout',
-  data () {
-    return {}
-  },
-  methods: {}
-}
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4307620a9933a7900b655b578321c816";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
+
 <style scoped>
 .HomeLayout {
   /* height: 100vh;
