@@ -44,8 +44,8 @@ const themeConfig = {
   ],
   
   sidebar: {
-    '/JavaScript/': concatJs(),
     '/Interview/': utils.genSidebar( '面试', filehelper.getFileName(rootpath + '/Interview/'), false),
+    '/JavaScript/': concatJs(),
     '/vue/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/vue/'), false),
     '/other/vuepress/': utils.genSidebar( 'VuePress', filehelper.getFileName(rootpath + '/other/vuepress/'), false),
     '/other/ide/': utils.genSidebar( '开发工具', filehelper.getFileName(rootpath + '/other/ide/'), false),
