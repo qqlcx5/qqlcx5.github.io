@@ -45,9 +45,9 @@ const themeConfig = {
   
   sidebar: {
     // '/JavaScript/': concatJs(),
-    '/vue/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/vue/'), false),
-    '/other/vuepress/': utils.genSidebar( 'VuePress', filehelper.getFileName(rootpath + '/other/vuepress/'), false),
-    '/other/ide/': utils.genSidebar( '开发工具', filehelper.getFileName(rootpath + '/other/ide/'), false),
+    // '/vue/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/vue/'), false),
+    // '/other/vuepress/': utils.genSidebar( 'VuePress', filehelper.getFileName(rootpath + '/other/vuepress/'), false),
+    // '/other/ide/': utils.genSidebar( '开发工具', filehelper.getFileName(rootpath + '/other/ide/'), false),
     '/other/github/': utils.genSidebar( 'GitHub', filehelper.getFileName(rootpath + '/other/github/'), false),
   },
 };
