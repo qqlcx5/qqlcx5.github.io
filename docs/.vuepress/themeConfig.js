@@ -44,19 +44,19 @@ const themeConfig = {
   ],
   
   sidebar: {
-    // '/JavaScript/': concatJs(),
-    // '/vue/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/vue/'), false),
+    '/JavaScript/': concatJs(),
+    '/vue/': utils.genSidebar( 'Vuejs', filehelper.getFileName(rootpath + '/vue/'), false),
     '/other/vuepress/': utils.genSidebar( 'VuePress', filehelper.getFileName(rootpath + '/other/vuepress/'), false),
-    // '/other/ide/': utils.genSidebar( '开发工具', filehelper.getFileName(rootpath + '/other/ide/'), false),
-    // '/other/github/': utils.genSidebar( 'GitHub', filehelper.getFileName(rootpath + '/other/github/'), false),
+    '/other/ide/': utils.genSidebar( '开发工具', filehelper.getFileName(rootpath + '/other/ide/'), false),
+    '/other/github/': utils.genSidebar( 'GitHub', filehelper.getFileName(rootpath + '/other/github/'), false),
   },
 };
 
-// JavaScript
-// function concatJs() {
-//   const arr = utils.genSidebar( 'JavaScript', filehelper.getFileName(rootpath + '/JavaScript/'), false);
-//   arr.push(...utils.genSidebar('Js-Vue',filehelper.getFileName(rootpath + '/JavaScript/vue/', 'vue/'),false));
-//   return arr;
-// }
+JavaScript
+function concatJs() {
+  const arr = utils.genSidebar( 'JavaScript', filehelper.getFileName(rootpath + '/JavaScript/'), false);
+  arr.push(...utils.genSidebar('Js-Vue',filehelper.getFileName(rootpath + '/JavaScript/vue/', 'vue/'),false));
+  return arr;
+}
 
 module.exports = themeConfig;
