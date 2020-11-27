@@ -1,6 +1,5 @@
 const plugins = [
-  [ require('./musicPlayer'), {} ],
-
+  ['vuepress-plugin-musicplayer', {} ],
   ['@vuepress-reco/vuepress-plugin-kan-ban-niang', {
     theme: ['koharu', 'miku', 'z16', 'wanko'],
     clean: true

@@ -22,7 +22,7 @@
     "dayjs": "^1.9.3",
     "jquery": "^3.5.1",
     "vuepress": "^1.7.1",
-    "vuepress-plugin-serve": "^2.0.4"
+    "vuepress-plugin-musicplayer": "^1.0.1"
   },
   "dependencies": {}
 }
