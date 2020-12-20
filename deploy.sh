@@ -9,7 +9,7 @@ git remote add origin git@github.com:qqlcx5/qqlcx5.github.io.git
 git remote set-url --add origin git@gitee.com:qqlcx5/vuepress.git
 git remote set-url --add origin git@e.coding.net:qqlcx5/qqlcx5/vuepress.git
 git push -f --all
-cd -
 rm -rf docs/.vuepress/dist
+cd -
 
 

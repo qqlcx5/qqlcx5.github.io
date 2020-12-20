@@ -1,10 +1,8 @@
-const plugins = require('./plugins');
-const themeConfig = require('./themeConfig');
-
+const plugins = require('./config/plugins');
+const themeConfig = require('./config/theme');
 module.exports = {
-  
-  title: '廖纯鑫博客',
-  description: '前端、前端教程、小程序、个人博客、廖纯鑫博客、vue、js、react、node、mysql',
+  title: '个人博客',
+  description: 'vuepress、前端、博客、个人博客',
   head: [
     ['link', { rel: 'icon', href: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/1.png' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
