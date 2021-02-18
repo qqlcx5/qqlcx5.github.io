@@ -7,8 +7,6 @@ on:
   #     - dev
   schedule:
     - cron: '*/2 * * * *'
-    branches:
-      - dev
 
 # 任务
 jobs:
