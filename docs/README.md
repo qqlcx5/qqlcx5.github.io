@@ -1,16 +1,14 @@
 ---
 home: true
-heroImage: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.1/img/logo.jpg'
-heroText: 廖纯鑫博客
-tagline: 从零开始的前端之路。
+heroImage: "https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@v1.0.0/image/crab_logo.png"
+heroText: 前端有道
+tagline: 关注 前端有道 公众号，不迷路
 actionText: 点击开始 →
 actionLink: /vue/
 features:
   - title: CV前端工程师
-    details: 自学前端、技术一般般、瞎琢磨感兴趣的东西。
-  - title: 兴趣爱好
-    details: 持家、洗衣做饭、打扫卫生、缝衣服、打羽毛球、篮球、足球、乒乓球、二次元宅。
-  - title: 技术方面的爱好
-    details: 喜欢尝试各种各样的黑科技工具、破解过手机上网免流量、Diy电脑、装黑苹果等。
+    details: 自学前端，啥知道一点入门小白，最在行的技术ctrl + cv。
+  - title: 技术方面
+    details: 2015年破解免流量上网bug、DIY组装电脑、2020搞黑苹果操作系统。
 footer: MIT Licensed | Copyright © 2020-present Evan You
 ---
