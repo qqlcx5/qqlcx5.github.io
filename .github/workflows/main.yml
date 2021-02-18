@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - dev
+  schedule:
+    - cron: '*/5 * * * *' # 每5分钟一次，测试用
 
 # 任务
 jobs:
