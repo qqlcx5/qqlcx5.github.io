@@ -2,9 +2,9 @@ name: Deploy GitHub Pages
 
 # 触发条件：在 push 到 dev 分支后
 on:
-  # push:
-  #   branches:
-  #     - dev
+  push:
+    branches:
+      - dev
   schedule:
     - cron: '*/5 * * * *'
 
