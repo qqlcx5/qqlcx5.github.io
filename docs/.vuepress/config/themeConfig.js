@@ -35,14 +35,6 @@ const themeConfig = {
       link: '/js/基础/基础',
     },
     {
-      text: 'CSS',
-      link: '/css/',
-    },
-    // {
-    //   text: '其他',
-    //   link: '/其他/ide/解决GitHub下载慢的方法',
-    // },
-    {
       text: '其他',
       ariaLabel: 'Menu',
       items: [
