@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vuepress dev docs",
+    "debug": "vuepress dev docs --port 3000 --debug",
+    "docs:dev": "vuepress dev docs --port 3000",
     "docs:build": "vuepress build docs"
   },
   "author": "lcx",
@@ -20,9 +21,8 @@
     "@vuepress/plugin-google-analytics": "^1.8.1",
     "@vuepress/plugin-pwa": "^1.8.1",
     "dayjs": "^1.10.4",
-    "jquery": "^3.5.1",
     "vuepress": "^1.8.1",
-    "vuepress-plugin-musicplayer": "^1.0.1"
-  },
-  "dependencies": {}
+    "vuepress-plugin-musicplayer": "^1.0.2",
+    "vuepress-plugin-one-click-copy": "^1.0.2"
+  }
 }

@@ -117,7 +117,7 @@ Vue3.0 `ref` 响应式原理基于 `Object. defineproperty`，而 `reactive` 响
 
 我上面说过Vue3.0 全面兼容Vue2.0，那么Vue2.0的 `ref` API，又该如何调用那。
 
-```js
+```vue
 <template>
   <div ref="root"></div>
 </template>
