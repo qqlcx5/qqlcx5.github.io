@@ -10,7 +10,7 @@ module.exports = [
     'script',
     {
       async: 'async',
-      src: 'https://hm.baidu.com/hm.js?a5725fb91592e5a091fa8a6c6a25d4a3',
+      src: 'https://hm.baidu.com/hm.js?662dade0b3fe9911e80442e86935e233',
     },
   ],
 ];

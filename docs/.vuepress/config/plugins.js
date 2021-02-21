@@ -2,6 +2,8 @@
 const plugins = [
     // 本地插件
     // [require('../plugins/vuepress-plugin-musicplayer'), {}],
+    // 看板娘插件
+    ['vuepress-plugin-live2d-model', {}],
     // 音乐插件
     ['vuepress-plugin-musicplayer', {}],
     // 代码块复制按钮
@@ -12,11 +14,6 @@ const plugins = [
         showInMobile: false, // whether to display on the mobile side, default: false.
       },
     ],
-    // 看板娘插件
-    ['@vuepress-reco/vuepress-plugin-kan-ban-niang', {
-      theme: ['koharu', 'miku', 'z16', 'wanko'],
-      clean: true
-    }],
     ['@vuepress/last-updated',{
       transformer: (timestamp) => {
         const dayjs = require('dayjs')
