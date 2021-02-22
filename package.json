@@ -22,7 +22,8 @@
     "@vuepress/plugin-pwa": "^1.8.1",
     "dayjs": "^1.10.4",
     "vuepress": "^1.8.1",
-    "vuepress-plugin-musicplayer": "^1.0.4",
+    "vuepress-plugin-live2d-model": "^1.0.0",
+    "vuepress-plugin-musicplayer": "^1.0.5",
     "vuepress-plugin-one-click-copy": "^1.0.2"
   }
 }
