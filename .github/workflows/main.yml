@@ -14,15 +14,7 @@ jobs:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     steps:
-      # - name: Setup Node
-      #   uses: actions/setup-node@v1
-      #   with:
-      #     node-version: ${{ matrix.node }}
-      
-      # - name: install pnpm
-      #   run: |
-      #     npm install --global pnpm@next
-      #     pnpm --version
+      # 安装 pnpm
       - uses: pnpm/action-setup@v1.2.1
         with:
           version: 5.17.2
@@ -36,7 +28,7 @@ jobs:
 
       # 生成静态文件
       - name: Build
-        run: pnpm install && pnpm run docs:build
+        run: pnpm install && npm run docs:build
 
       # 部署到 GitHub Pages
       - name: Deploy
