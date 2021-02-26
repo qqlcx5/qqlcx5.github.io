@@ -14,8 +14,9 @@ jobs:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     steps:
+      
       - name: install pnpm
-      run: npm install --global pnpm@next && pnpm --version
+        run: npm install --global pnpm
 
       # 拉取代码
       - name: Checkout
