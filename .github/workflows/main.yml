@@ -20,7 +20,9 @@ jobs:
           node-version: ${{ matrix.node }}
       
       - name: install pnpm
-      run: npm install --global pnpm@next
+        run: |
+          npm install --global pnpm@next
+          pnpm --version
 
       # 拉取代码
       - name: Checkout
