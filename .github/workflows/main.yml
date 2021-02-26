@@ -14,15 +14,19 @@ jobs:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
+      # - name: Setup Node
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     node-version: ${{ matrix.node }}
       
-      - name: install pnpm
-        run: |
-          npm install --global pnpm@next
-          pnpm --version
+      # - name: install pnpm
+      #   run: |
+      #     npm install --global pnpm@next
+      #     pnpm --version
+      - uses: pnpm/action-setup@v1.2.1
+        with:
+          version: 5.17.2
+          run_install: true
 
       # 拉取代码
       - name: Checkout
