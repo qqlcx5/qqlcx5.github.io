@@ -6,7 +6,7 @@ on:
     branches:
       - dev
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '0 */30 * * *'
 
 # 任务
 jobs:
@@ -15,10 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: install pnpm
-      run: |
-        npm install --global pnpm@next
-        pnpm --version
-        
+      run: npm install --global pnpm@next && pnpm --version
+
       # 拉取代码
       - name: Checkout
         uses: actions/checkout@v2
