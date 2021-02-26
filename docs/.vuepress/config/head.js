@@ -7,10 +7,6 @@ module.exports = [
   ],
   ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
   [
-    'script',
-    {
-      async: 'async',
-      src: 'https://hm.baidu.com/hm.js?662dade0b3fe9911e80442e86935e233',
-    },
+    'script', { async: 'async', src: 'https://hm.baidu.com/hm.js?662dade0b3fe9911e80442e86935e233' },
   ],
 ];
