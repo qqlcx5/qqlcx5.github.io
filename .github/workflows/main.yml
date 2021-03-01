@@ -6,7 +6,7 @@ on:
     branches:
       - dev
   schedule:
-    - cron: '0 */30 * * *'
+    - cron: '*/240 * * * *'
 
 # 任务
 jobs:
