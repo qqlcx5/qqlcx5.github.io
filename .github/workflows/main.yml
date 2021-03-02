@@ -6,7 +6,7 @@ on:
     branches:
       - dev
   schedule:
-    - cron: '*/240 * * * *' # 每隔4小时更新
+    - cron: '* 12 * * *' # 每隔4小时更新
 
 # 任务
 jobs:
