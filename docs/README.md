@@ -6,9 +6,8 @@ tagline: 关注 前端有道 公众号，不迷路
 actionText: 点击开始 →
 actionLink: /vue/浅入浅出Vue3
 features:
-  - title: CV前端工程师
-    details: 自学前端，略微懂一点的入门小白，最在行的技术ctrl + cv。
-  - title: 其他方面
-    details: 2013DIY组装电脑、2015年破解免流量上网bug、2019搞黑苹果系统等。
+  - title: 前端切工仔
+    details: 自学入行前端，最在行的技术 ctrl + cv
+
 footer: MIT Licensed | Copyright © 2020-present Evan You
 ---
