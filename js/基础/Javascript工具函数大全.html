@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Javascript 工具函数大全 (Plus) | 前端有道</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@v1.0.0/image/polar_bear.jpg">
+    <script async="async" src="https://hm.baidu.com/hm.js?662dade0b3fe9911e80442e86935e233"></script>
+    <meta name="description" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/assets/css/0.styles.6d00fd67.css" as="style"><link rel="preload" href="/assets/js/app.785154ac.js" as="script"><link rel="preload" href="/assets/js/2.f06ef534.js" as="script"><link rel="preload" href="/assets/js/8.899311b8.js" as="script"><link rel="prefetch" href="/assets/js/10.fb695b6a.js"><link rel="prefetch" href="/assets/js/11.73c8479b.js"><link rel="prefetch" href="/assets/js/12.0ff865a5.js"><link rel="prefetch" href="/assets/js/13.b7162b92.js"><link rel="prefetch" href="/assets/js/14.8b772222.js"><link rel="prefetch" href="/assets/js/15.b0f89670.js"><link rel="prefetch" href="/assets/js/16.74e42f6d.js"><link rel="prefetch" href="/assets/js/17.a757e864.js"><link rel="prefetch" href="/assets/js/18.1117099a.js"><link rel="prefetch" href="/assets/js/19.191cb3a5.js"><link rel="prefetch" href="/assets/js/20.6fcda0b5.js"><link rel="prefetch" href="/assets/js/21.4b45e949.js"><link rel="prefetch" href="/assets/js/22.34fd2857.js"><link rel="prefetch" href="/assets/js/23.25f8bbd9.js"><link rel="prefetch" href="/assets/js/24.ae0c0b45.js"><link rel="prefetch" href="/assets/js/25.49dacb58.js"><link rel="prefetch" href="/assets/js/26.a60943ee.js"><link rel="prefetch" href="/assets/js/27.7a9cb1cf.js"><link rel="prefetch" href="/assets/js/28.cc70475d.js"><link rel="prefetch" href="/assets/js/29.845d47ba.js"><link rel="prefetch" href="/assets/js/3.af9d7c93.js"><link rel="prefetch" href="/assets/js/30.7c5fef20.js"><link rel="prefetch" href="/assets/js/31.def6179e.js"><link rel="prefetch" href="/assets/js/32.771c7ebc.js"><link rel="prefetch" href="/assets/js/33.cb70a0c7.js"><link rel="prefetch" href="/assets/js/4.6c31dd5d.js"><link rel="prefetch" href="/assets/js/5.c8edd31b.js"><link rel="prefetch" href="/assets/js/6.7415f933.js"><link rel="prefetch" href="/assets/js/7.04b4774f.js"><link rel="prefetch" href="/assets/js/9.58165981.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6d00fd67.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端有道</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/面试/schedule.html" class="nav-link">
+  面试
+</a></div><div class="nav-item"><a href="/vue/button.html" class="nav-link">
+  Vuejs
+</a></div><div class="nav-item"><a href="/js/基础/基础.html" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Menu" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="Menu" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/其他/ide/VSCode插件推荐.html" class="nav-link">
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/其他/vuepress/如何便捷的写作.html" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-item"><!----> <a href="/其他/github/解决GitHub下载慢的方法.html" class="nav-link">
+  GitHub黑科技
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/面试/schedule.html" class="nav-link">
+  面试
+</a></div><div class="nav-item"><a href="/vue/button.html" class="nav-link">
+  Vuejs
+</a></div><div class="nav-item"><a href="/js/基础/基础.html" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Menu" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="Menu" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/其他/ide/VSCode插件推荐.html" class="nav-link">
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/其他/vuepress/如何便捷的写作.html" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-item"><!----> <a href="/其他/github/解决GitHub下载慢的方法.html" class="nav-link">
+  GitHub黑科技
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/js/基础/Javascript工具函数大全.html" class="active sidebar-link">Javascript工具函数大全</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js/基础/Javascript工具函数大全.html#前言" class="sidebar-link">前言</a></li><li class="sidebar-sub-header"><a href="/js/基础/Javascript工具函数大全.html#_1-第一部分-数组" class="sidebar-link">1. 第一部分：数组</a></li><li class="sidebar-sub-header"><a href="/js/基础/Javascript工具函数大全.html#对象" class="sidebar-link">对象</a></li><li class="sidebar-sub-header"><a href="/js/基础/Javascript工具函数大全.html#其他" class="sidebar-link">其他</a></li><li class="sidebar-sub-header"><a href="/js/基础/Javascript工具函数大全.html#node" class="sidebar-link">node</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>进阶</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/js/进阶/01.进阶1.html" class="sidebar-link">进阶1</a></li><li><a href="/js/进阶/02.进阶2.html" class="sidebar-link">进阶2</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript-工具函数大全-plus"><a href="#javascript-工具函数大全-plus" class="header-anchor">#</a> Javascript 工具函数大全 (Plus)</h1> <h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>在两年的项目开发中，对项目中常见的工具函数的一些总结的经验之谈。</p> <p>目录：</p> <ul><li>第一部分：数组</li> <li>第二部分：函数</li> <li>第三部分：字符串</li> <li>第四部分：对象</li> <li>第五部分：数字</li></ul> <p>参考文章：</p> <ul><li><a href="https://betterprogramming.pub/127-helpful-javascript-snippets-you-can-learn-in-30-seconds-or-less-part-1-of-6-bc2bc890dfe5" target="_blank" rel="noopener noreferrer">127 Helpful JavaScript Snippets You Can Learn in 30 Seconds or Less — Part 1 of 6
+<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="_1-第一部分-数组"><a href="#_1-第一部分-数组" class="header-anchor">#</a> 1. 第一部分：数组</h2> <ol><li><code>setMultArr</code>：普通数组转二维数组</li></ol> <p>该函数传入第一个参数，第二个参数是可选的，函数返回一个二维数组。</p> <p><code>arr</code> <Array> 任何合法的数组类型。
+<code>count</code> 子数组需要的长度。</Array></p> <div class="language- extra-class"><pre class="language-text"><code>function setMultArr(arr, count = 8, pages = []) {
+    arr.forEach((item, index) =&gt; {
+    const page = Math.floor(index / count)
+        if (!pages[page]) pages[page] = []
+        pages[page].push(item)
+    })
+    return pages
+}
+</code></pre></div><p>示例</p> <div class="language- extra-class"><pre class="language-text"><code>setMultArr([1, 2, 3, 4, 5, 6, 7], 2)
+
+// [[1, 2], [3, 4], [5, 6], [7]]
+</code></pre></div><ol><li><code>flat</code> 数组扁平化</li></ol> <p>该函数传入一个二维数组，函数返回一个普通数组。</p> <div class="language- extra-class"><pre class="language-text"><code>// 扁平化  Map 方法
+const flatten = (arr) =&gt; [].concat(...arr.map(v =&gt; Array.isArray(v) ? flatten(v) : v))
+
+// 扁平化  reduce 方法
+const flatten = (arr) =&gt; arr.reduce((a, c) =&gt; a.concat(Array.isArray(c)? flatten(c) : c), [])
+</code></pre></div><p>示例</p> <div class="language- extra-class"><pre class="language-text"><code>flatten([1, [2], [3], [4, 5]]);
+ 
+// [1, 2, 3, 4, 5]
+</code></pre></div><p>扩展补充：ES6提供的新方法 <code>flat(depth)</code></p> <p><code>flat(depth)</code> 方法中的参数depth，代表展开嵌套数组的深度，默认是<code>1</code></p> <div class="language- extra-class"><pre class="language-text"><code>let a = [1, [2, 3]]
+
+a.flat(); // [1, 2, 3] 
+</code></pre></div><ol><li><code>average</code> 求平均值</li></ol> <p>该函数返回两个或多个数值的平均值。</p> <div class="language- extra-class"><pre class="language-text"><code>const average = (...nums) =&gt; nums.reduce((acc, val) =&gt; acc + val, 0) / nums.length;
+
+average(...[1, 2, 3]); // 2
+average(1, 2, 3); // 2
+</code></pre></div><ol><li><code>isArrayEqual</code> 检查两个数组各项相等</li></ol> <p>该函数必须传入两个数组，返回 Boolean。</p> <div class="language- extra-class"><pre class="language-text"><code>const isArrayEqual = (a, b, has = true) =&gt; {
+  if (a.length !== b.length) return has = false
+  const s = new Set(b);
+  for (let i = 0; i &lt; a.length; i++) {
+      if(!s.has(a[i])) return has = false
+  }
+  return has
+}
+</code></pre></div><p>示例</p> <div class="language- extra-class"><pre class="language-text"><code>isArrayEqual([6, 5, 2, 4, 1, 3], [1, 2, 3, 4, 5, 6])
+
+// true
+</code></pre></div><ol><li><code>allEqual</code> 检查数组各项相等</li></ol> <p>该函数传入一个数组，返回 Boolean</p> <div class="language- extra-class"><pre class="language-text"><code>const allEqual = arr =&gt; arr.every(val =&gt; val === arr[0]);
+
+allEqual([1, 2, 3, 4, 5, 6]); // false
+
+allEqual([1, 1, 1, 1]); // true
+</code></pre></div><ol><li><code>diffArray</code>筛选两个数组差异值</li></ol> <p>该函数传入两个数组，返回第一个数组的值</p> <div class="language- extra-class"><pre class="language-text"><code>const diffArray = (a, b) =&gt; {
+  const a1 = new Set(a);
+  const b1 = new Set(b);
+  let arr1 = a.filter(x =&gt; !b1.has(x));
+  let arr2 = b.filter(x =&gt; !a1.has(x));
+  return [...arr1, ...arr2]
+};
+</code></pre></div><p>示例</p> <div class="language- extra-class"><pre class="language-text"><code>diffArray([1, 2, 6, 7], [1, 2, 9, 5])
+// [ 6, 7, 9, 5 ]
+</code></pre></div><ol><li><code>averageBy</code> 检查数组对象各项相等</li></ol> <p>该函数必须传入一个数组对象，第二个参数对象的属性名，返回 Boolean</p> <div class="language- extra-class"><pre class="language-text"><code>const averageBy = (arr, fn) =&gt;
+  arr.map(typeof fn === 'function' ? fn : val =&gt; val[fn]).reduce((acc, val) =&gt; acc + val, 0) /
+  arr.length;
+  
+averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o =&gt; o.n); // 5
+
+averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
+</code></pre></div><ol><li><code>aboutEqual</code> 两个值是否约等于</li></ol> <p>该函数传入两个数字是否大致相等，但相差很小</p> <div class="language- extra-class"><pre class="language-text"><code>const aboutEqual = (n1, n2, epsilon = 0.001) =&gt; Math.abs(n1 - n2) &lt; epsilon;
+
+console.log(aboutEqual(1.25, 1.2, 0.06)); // true
+</code></pre></div><ol><li><code>getLineSize</code> 计算两点之间的距离</li></ol> <p>通过勾股定理计算，返回两点之间的距离</p> <div class="language- extra-class"><pre class="language-text"><code>const getLineSize = (x1, y1, x2, y2) =&gt; Math.hypot(x2 - x1, y2 - y1)
+
+getLineSize(0, 0, 3, 4) // 5
+</code></pre></div><ol><li><code>uniqueArray</code> 数组去重</li></ol> <p>该函数传入一个数组，返回一个去重后的新数组</p> <div class="language- extra-class"><pre class="language-text"><code>const uniqueArray = (...arr) =&gt; [... new Set(arr)]
+
+// ES6
+const uniqueArray = (...arr) =&gt; Array.from(new Set(arr))
+
+uniqueArray([1, 2, 2, 3, 4, 4, 5])
+uniqueArray(1, 2, 2, 3, 4, 4, 5)
+// [ 1, 2, 3, 4, 5 ]
+</code></pre></div><ol><li><code>uniqueArrayObject</code> 数组对象去重</li></ol> <p>该函数传入一个数组对象，返回一个去重后的新数组</p> <div class="language- extra-class"><pre class="language-text"><code>const uniqueArrayObject = (arr, key) =&gt; {
+  return arr.reduce((acc, cur) =&gt; {
+    const ids = acc.map((item) =&gt; item[key]);
+    return ids.includes(cur[key]) ? acc : [...acc, cur];
+  }, []);
+};
+</code></pre></div><p>示例</p> <div class="language- extra-class"><pre class="language-text"><code>const responseList = [
+  { id: 1, a: 1 },
+  { id: 2, a: 2 },
+  { id: 3, a: 3 },
+  { id: 1, a: 4 },
+  { id: 2, a: 2 },
+  { id: 3, a: 3 },
+  { id: 1, a: 4 },
+  { id: 2, a: 2 },
+  { id: 3, a: 3 },
+  { id: 1, a: 4 },
+  { id: 2, a: 2 },
+  { id: 3, a: 3 },
+  { id: 1, a: 4 },
+];
+
+uniqueArrayObject(responseList, 'id')
+
+// [ { id: 1, a: 1 }, { id: 2, a: 2 }, { id: 3, a: 3 } ]
+
+</code></pre></div><ol><li><code>setTree</code>生成树结构(阿里面试题)</li></ol> <p>该函数传入一个数组，返回一个树结构数组</p> <div class="language- extra-class"><pre class="language-text"><code>const setTree = (arr, id = null, link = 'parent_id') =&gt;
+  arr
+    .filter((item) =&gt; item[link] === id)
+    .map((item) =&gt; ({ ...item, children: setTree(arr, item.id) }));
+</code></pre></div><p>示例</p> <div class="language- extra-class"><pre class="language-text"><code>const comments = [
+  { id: 1, parent_id: null },
+  { id: 2, parent_id: 1 },
+  { id: 3, parent_id: 1 },
+  { id: 4, parent_id: 2 },
+  { id: 5, parent_id: 4 },
+];
+
+setTree(comments)
+
+// [ { id: 1, parent_id: null, children: [ [Object], [Object] ] } ]
+</code></pre></div><ol><li><code>ascArr</code> 数组升序</li></ol> <p>该函数第一个参数传入一个数组， 返回升序的新数组。</p> <div class="language- extra-class"><pre class="language-text"><code>const ascArr = (arr) =&gt; arr.sort((a, b) =&gt; a - b)
+
+ascArr([3, 2, 3, 4, 1])
+// [ 1, 2, 3, 3, 4 ]
+</code></pre></div><p>不足之处： sort()方法会改变原数组，默认按unicode码顺序排列</p> <div class="language- extra-class"><pre class="language-text"><code>通过ES6 ...展开运算符浅拷贝一份新数组
+
+const ascArr = (arr) =&gt; [...arr].sort((a, b) =&gt; a - b)
+</code></pre></div><ol><li><code>descArr</code> 数组降序</li></ol> <p>该函数第一个参数传入一个数组， 返回降序的新数组。</p> <div class="language- extra-class"><pre class="language-text"><code>const descArr = (arr) =&gt; [...arr].sort((a, b) =&gt; b - a)
+
+descArr([3, 2, 3, 4, 1])
+// [ 4, 3, 3, 2, 1 ]
+</code></pre></div><ol><li><code>isFind</code> 查找数组符合条件的值</li></ol> <p>该函数第一个参数传入一个数组，第二个参数属性值，或者是一个函数，第三个符合条件的值，返回一个boolean值</p> <div class="language- extra-class"><pre class="language-text"><code>const isFind = (arr, fn, key) =&gt; !!arr.find(typeof fn === 'function' ? fn : val =&gt; val[fn] === key)
+
+isFind([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o=&gt; o.n === 6) 
+// true
+
+isFind([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n', 1)
+// false
+</code></pre></div><h2 id="对象"><a href="#对象" class="header-anchor">#</a> 对象</h2> <ol><li><code>isObjectEqual</code>检查两个对象各项相等</li></ol> <p>该函数必须传入两个数组，返回 Boolean。</p> <div class="language- extra-class"><pre class="language-text"><code>function isObjectEqual(obj1, obj2, has = true) {
+  // 判断类型
+  const o1 = obj1 instanceof Object;
+  const o2 = obj2 instanceof Object;
+  if (!o1 || !o2) return obj1 === obj2;
+  // 判断长度
+  const keys1 = Object.getOwnPropertyNames(obj1);
+  const keys2 = Object.getOwnPropertyNames(obj2);
+  if (keys1.length !== keys2.length) return false;
+  // 各项对比
+  for (let o in obj1) {
+    let t1 = obj1[o] instanceof Object;
+    let t2 = obj2[o] instanceof Object;
+    if (t1 &amp;&amp; t2) {
+      has = diffByObj(obj1[o], obj2[o]);
+    } else if (obj1[o] !== obj2[o]) {
+      has = false;
+      break;
+    }
+  }
+  return has;
+}
+</code></pre></div><p>示例</p> <div class="language- extra-class"><pre class="language-text"><code>isObjectEqual({a:2,b:4}, {b:4,a:2})
+// true
+</code></pre></div><h2 id="其他"><a href="#其他" class="header-anchor">#</a> 其他</h2> <ol><li><code>getCurrentURL</code> 获取当前的URL地址</li></ol> <p>该函数返回当前页面的URL地址。</p> <div class="language- extra-class"><pre class="language-text"><code>const getCurrentURL = () =&gt; window.location.href
+
+getCurrentURL() //&quot;https://qqlcx5.github.io/&quot;
+</code></pre></div><h2 id="node"><a href="#node" class="header-anchor">#</a> node</h2></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">2021-03-14 13:48</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/js/进阶/01.进阶1.html">
+        进阶1
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><div class="live2d-model-container" data-v-d7fdc44e><canvas id="vuepress-live2d-model" width="300" height="500" class="live2d" data-v-d7fdc44e></canvas></div><div id="musicPlayer" data-v-3d3ae543><!----> <div class="bbox" data-v-3d3ae543><div class="pan" style="background-image:url(https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@v1.0.1/image/pan.png);" data-v-3d3ae543><img src="" alt class="pan_c" data-v-3d3ae543></div> <div class="box" style="background-image:url();" data-v-3d3ae543><div class="music_shlter_2" style="background-image:url();" data-v-3d3ae543></div> <div class="music_shlter" style="background-image:url();" data-v-3d3ae543></div> <div class="music_shlter_3" data-v-3d3ae543></div> <div class="music_dis" data-v-3d3ae543><div class="dis_list" data-v-3d3ae543>···</div> <p class="music_title" data-v-3d3ae543></p> <p class="music_intro" data-v-3d3ae543>歌手: </p> <ul class="music_words" data-v-3d3ae543><div class="music_words_box" style="top:0px;" data-v-3d3ae543></div></ul></div> <div class="control_box" data-v-3d3ae543><div class="control_button" data-v-3d3ae543><img src="https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@v1.0.1/image/pause.png" alt class="control_icon" data-v-3d3ae543></div> <div class="progress" data-v-3d3ae543><div class="progress_c" style="width:0%;" data-v-3d3ae543><div class="progress_circle" data-v-3d3ae543><div class="progress_circle_c" data-v-3d3ae543></div></div></div></div></div></div> <video id="music" autoplay="autoplay" src="" name="media" data-v-3d3ae543></video></div></div><div class="back-to-ceiling" style="right:3rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;box-shadow:0 1px 6px 0 rgba(0,0,0,.2);background-color:#fff;display:none;" data-v-6f61febc data-v-6f61febc><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-6f61febc><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-6f61febc></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-6f61febc></path></svg></div></div></div>
+    <script src="/assets/js/app.785154ac.js" defer></script><script src="/assets/js/2.f06ef534.js" defer></script><script src="/assets/js/8.899311b8.js" defer></script>
+  </body>
+</html>
