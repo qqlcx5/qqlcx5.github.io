@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - dev
-  schedule:
-    - cron: '* 5 * * *' # 每隔6小时更新
+  # schedule:
+  #   - cron: '* 5 * * *' # 每隔6小时更新
 
 # 任务
 jobs:
