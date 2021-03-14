@@ -32,7 +32,7 @@ const themeConfig = {
     },
     {
       text: 'JavaScript',
-      link: '/js/基础/基础',
+      link: '/js/基础/Javascript工具函数大全',
     },
     {
       text: '其他',
