@@ -6,7 +6,16 @@ const plugins = [
     ['vuepress-plugin-live2d-model', {}],
     // 音乐插件
     ['vuepress-plugin-musicplayer', {}],
+    // 最后更新时间
+    ['@vuepress/last-updated',{
+      transformer: (timestamp) => {
+        const dayjs = require('dayjs')
+        return dayjs(timestamp,).format('YYYY-MM-DD HH:mm')
+      }
+    }],
+    ['cursor-effects', { zIndex: 999 }],
     // 代码块复制按钮
+    // yarn add vuepress-plugin-one-click-copy -D
     ['one-click-copy', {
         copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
         copyMessage: '复制成功~~', // default is 'Copy successfully and then paste it for use.'
@@ -14,13 +23,9 @@ const plugins = [
         showInMobile: false, // whether to display on the mobile side, default: false.
       },
     ],
-    ['@vuepress/last-updated',{
-      transformer: (timestamp) => {
-        const dayjs = require('dayjs')
-        return dayjs(timestamp,).format('YYYY-MM-DD HH:mm')
-      }
-    }],
-    // 返回首页样式
+
+    // 回到顶部
+    // yarn add vuepress-plugin-one-click-copy -D
     ['@vuepress-reco/vuepress-plugin-back-to-top', {
       customStyle: {
         right: '3rem',
@@ -33,6 +38,8 @@ const plugins = [
         backgroundColor: '#fff'
       }
     }],
+    // 一只可爱的猫回到顶部
+    // ['vuepress-plugin-go-top', {}],
     // 谷歌分析
     ['@vuepress/google-analytics', { 'ga': 'UA-171545170-1' }],
     // 留言
