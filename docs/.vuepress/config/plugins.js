@@ -1,10 +1,10 @@
 const plugins = [
   // 本地插件
-  [require('../plugins/vuepress-plugin-musicplayer'), {}],
+  // [require('../plugins/vuepress-plugin-musicplayer'), {}],
   // 看板娘插件
   // ['vuepress-plugin-live2d-model', {}],
   // 音乐插件
-  // ['vuepress-plugin-musicplayer', {}],
+  ['vuepress-plugin-musicplayer', {}],
   // 最后更新时间
   [
     '@vuepress/last-updated',
