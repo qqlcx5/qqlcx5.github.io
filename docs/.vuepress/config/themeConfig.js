@@ -5,6 +5,7 @@ const readFile = require(utilsRoot + '/readFile');
 
 const js = readFile(docsRoot + '/js');
 const 其他 = readFile(docsRoot + '/其他');
+
 const 面试 = [{
     title: '面试',
     collapsable: false,
@@ -32,7 +33,7 @@ const themeConfig = {
     },
     {
       text: 'JavaScript',
-      link: '/js/基础/Javascript前端高效开发工具库',
+      link: '/js/基础/01.Javascript前端高效开发工具库',
     },
     {
       text: '其他',
