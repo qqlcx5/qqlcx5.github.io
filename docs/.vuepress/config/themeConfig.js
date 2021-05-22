@@ -24,7 +24,7 @@ const themeConfig = {
   nav: [
     {
       text: '面试',
-      link: '/面试/schedule',
+      link: '/面试/01.awesome-lib',
     },
     {
         text: 'Vuejs',
