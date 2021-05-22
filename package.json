@@ -1,3 +1,4 @@
+
 {
   "name": "blog",
   "version": "1.1.0",
@@ -9,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "debug": "vuepress dev docs --port 3000 --debug",
-    "dev": "vuepress dev docs --port 3000 --debug",
+    "dev": "vuepress dev docs --port 3000",
     "docs:dev": "vuepress dev docs --port 3000",
     "docs:build": "vuepress build docs"
   },
@@ -29,7 +30,5 @@
     "vuepress-plugin-musicplayer": "^1.1.0",
     "vuepress-plugin-notify": "^1.0.7",
     "vuepress-plugin-one-click-copy": "^1.0.2"
-  },
-  
- 
+  }
 }

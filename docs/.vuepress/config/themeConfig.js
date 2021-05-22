@@ -1,5 +1,5 @@
 const path = require('path'); // 路径模块
-const utilsRoot = path.join(__dirname, '..', '..','..', 'utils/modules');
+const utilsRoot = path.join(__dirname, '..', 'utils');
 const docsRoot = path.join(__dirname,'..', '..');
 const readFile = require(utilsRoot + '/readFile');
 
@@ -32,7 +32,7 @@ const themeConfig = {
     },
     {
       text: 'JavaScript',
-      link: '/js/基础/Javascript工具函数大全',
+      link: '/js/基础/Javascript前端高效开发工具库',
     },
     {
       text: '其他',
