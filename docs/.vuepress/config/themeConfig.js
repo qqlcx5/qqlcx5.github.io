@@ -44,6 +44,10 @@ const themeConfig = {
         { text: 'GitHub黑科技', link: '/其他/github/解决GitHub下载慢的方法' }
       ]
     },
+    {
+      text: '国内版',
+      link: 'https://qqlcx5.gitee.io/',
+    },
     // {
     //   text: '主页',
     //   ariaLabel: 'Menu',
