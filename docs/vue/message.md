@@ -1,6 +1,4 @@
 # message
-嗯，没空写教程，后续补上。。。
-
 ```js
 import Vue from 'vue';
 import messageComp from './message.vue';

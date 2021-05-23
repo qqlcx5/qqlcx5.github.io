@@ -33,7 +33,7 @@ const themeConfig = {
     },
     {
       text: 'JavaScript',
-      link: '/js/基础/01.Javascript前端高效开发工具库',
+      link: '/js/基础/if-else优化方案',
     },
     {
       text: '其他',
@@ -43,6 +43,10 @@ const themeConfig = {
         { text: 'VuePress', link: '/其他/vuepress/如何便捷的写作' },
         { text: 'GitHub黑科技', link: '/其他/github/解决GitHub下载慢的方法' }
       ]
+    },
+    {
+      text: 'nutils-js',
+      link: 'https://qqlcx5.github.io/nutils-js-site/',
     },
     {
       text: '国内版',

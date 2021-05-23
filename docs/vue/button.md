@@ -1,5 +1,5 @@
 # button
-嗯，没空写教程，后续补上。。。
+UI库组件库学习中
 
 ```vue
 <template>

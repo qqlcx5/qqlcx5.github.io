@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: "https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@v1.0.0/image/qc-play.png"
+heroImage: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@v1.0.0/image/qc-play.png'
 heroText: 前端有道
 tagline: 分享生活,分享知识
 actionText: 点击开始 →

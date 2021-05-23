@@ -5,6 +5,7 @@ const plugins = [
   // ['vuepress-plugin-live2d-model', {}],
   // 音乐插件
   ['vuepress-plugin-musicplayer', {}],
+  //  https://blogme.top:3000/song/url?id=1835009703
   // 最后更新时间
   [
     '@vuepress/last-updated',
