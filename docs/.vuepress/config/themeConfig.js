@@ -6,10 +6,10 @@ const readFile = require(utilsRoot + '/readFile');
 const js = readFile(docsRoot + '/js');
 const 其他 = readFile(docsRoot + '/其他');
 
-const 面试 = [{
-    title: '面试',
+const 推荐 = [{
+    title: '推荐',
     collapsable: false,
-    children: readFile(docsRoot + '/面试')
+    children: readFile(docsRoot + '/推荐')
 }]
 const vue = [{
     title: '基础',
@@ -24,8 +24,8 @@ const themeConfig = {
   lastUpdated: '最后更新时间', //最后更新时间
   nav: [
     {
-      text: '面试',
-      link: '/面试/01.awesome-lib',
+      text: '推荐',
+      link: '/推荐/01.awesome-lib',
     },
     {
         text: 'Vuejs',
@@ -33,7 +33,7 @@ const themeConfig = {
     },
     {
       text: 'JavaScript',
-      link: '/js/基础/if-else优化方案',
+      link: '/js/基础/01.if-else优化方案',
     },
     {
       text: '其他',
@@ -63,7 +63,7 @@ const themeConfig = {
   ],
   
   sidebar: {
-    '/面试/': 面试,
+    '/推荐/': 推荐,
     '/js/': js,
     '/vue/': vue,
     '/其他/': 其他,
