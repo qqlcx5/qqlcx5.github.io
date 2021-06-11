@@ -6,13 +6,20 @@ const readFile = require(utilsRoot + '/readFile');
 const js = readFile(docsRoot + '/js');
 const 其他 = readFile(docsRoot + '/其他');
 
+const guide = [{
+    title: '指南',
+    collapsable: false,
+    children: readFile(docsRoot + '/guide')
+}]
+
 const 推荐 = [{
     title: '推荐',
     collapsable: false,
     children: readFile(docsRoot + '/推荐')
 }]
+
 const vue = [{
-    title: '基础',
+    title: 'Vue.js',
     collapsable: false,
     children: readFile(docsRoot + '/vue')
 }]
@@ -23,6 +30,10 @@ const themeConfig = {
     smoothScroll: true,
     lastUpdated: '最后更新时间', //最后更新时间
     nav: [
+        {
+            text: '指南',
+            link: '/guide/guide',
+        },
         {
             text: '推荐',
             link: '/推荐/01.awesome-lib',
@@ -35,19 +46,7 @@ const themeConfig = {
             text: 'JavaScript',
             link: '/js/基础/01.if-else优化方案',
         },
-        {
-            text: '生态系统',
-            ariaLabel: '项目',
-            items: [
-                { text: 'nutils-js', link: 'https://qqlcx5.github.io/nutils-js-site/' },
-                { text: 'uni-crab', link: 'https://github.com/qqlcx5/uni-crab' },
-                { text: 'vuepress-template', link: 'https://github.com/qqlcx5/vuepress-template' },
-                { text: 'vuepress-plugin-musicplayer', link: 'https://github.com/qqlcx5/vuepress-plugin-musicplayer' },
-                { text: 'vuepress-plugin-notify', link: 'https://github.com/qqlcx5/vuepress-plugin-notify' },
-                { text: 'vuepress-plugin-live2d-model', link: 'https://github.com/qqlcx5/vuepress-plugin-live2d-model' },
-                { text: 'vuepress-plugin-live2d-model', link: 'https://github.com/qqlcx5/vuepress-plugin-live2d-model' },
-            ]
-        },
+        
 
         {
             text: '其他',
@@ -59,13 +58,22 @@ const themeConfig = {
             ]
         },
         {
-            text: 'nutils-js',
-            link: 'https://qqlcx5.github.io/nutils-js-site/',
+            text: '生态系统',
+            ariaLabel: '项目',
+            items: [
+                { text: 'nutils-js', link: 'https://qqlcx5.github.io/nutils-js-site/' },
+                { text: 'uni-crab', link: 'https://github.com/qqlcx5/uni-crab' },
+                { text: 'vuepress-template', link: 'https://github.com/qqlcx5/vuepress-template' },
+                { text: 'vuepress-plugin-musicplayer', link: 'https://github.com/qqlcx5/vuepress-plugin-musicplayer' },
+                { text: 'vuepress-plugin-notify', link: 'https://github.com/qqlcx5/vuepress-plugin-notify' },
+                { text: 'vuepress-plugin-live2d-model', link: 'https://github.com/qqlcx5/vuepress-plugin-live2d-model' },
+            ]
         },
         {
             text: '国内文档',
             link: 'https://qqlcx5.gitee.io/',
         },
+        
         // {
         //   text: '主页',
         //   ariaLabel: 'Menu',
@@ -79,6 +87,7 @@ const themeConfig = {
     sidebar: {
         '/js/': js,
         '/vue/': vue,
+        '/guide/': guide,
         '/推荐/': 推荐,
         '/其他/': 其他,
     },

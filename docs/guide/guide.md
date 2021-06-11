@@ -2,7 +2,7 @@
 
 我是 `星野`，一枚前端工程师。喜欢整一些花里胡哨的东西。
 
-**加入前端有道交流群、技术探讨、学习**
+**加入前端有道交流群、一起学习、技术探讨**
 
 ![wechat](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@v1.0.0/image/wechat_m.png)
 
