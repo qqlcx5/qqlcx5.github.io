@@ -36,11 +36,11 @@ const themeConfig = {
         },
         {
             text: 'Vuejs',
-            link: '/vue/button',
+            link: '/vue/vue 响应式原理解析',
         },
         {
             text: 'JavaScript',
-            link: '/js/01.if-else优化方案',
+            link: '/js/01.代码中大量的 if-else你有什么优化方案',
         },
         
 
@@ -49,7 +49,7 @@ const themeConfig = {
             ariaLabel: 'Menu',
             items: [
                 { text: '开发工具', link: '/其他/ide/VSCode插件推荐' },
-                { text: 'VuePress', link: '/其他/vuepress/如何便捷的写作' },
+                { text: 'VuePress', link: '/其他/vuepress/VuePress搭建个人博客' },
                 { text: 'GitHub黑科技', link: '/其他/github/解决GitHub下载慢的方法' }
             ]
         },

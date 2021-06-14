@@ -1,4 +1,4 @@
-# 基于Vue3.0开发知乎日报实战
+# 基于Vue3.0开发知乎日报
 
 ![vue](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200723154936.jpg)
 
