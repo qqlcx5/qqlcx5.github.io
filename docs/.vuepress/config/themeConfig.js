@@ -12,12 +12,12 @@ const guide = [{
     children: readFile(docsRoot + '/guide')
 }]
 
-const 推荐 = [{
-    title: '推荐',
-    collapsable: false,
-    children: readFile(docsRoot + '/推荐')
-}]
 
+const Js = [{
+    title: 'JavaScript',
+    collapsable: false,
+    children: readFile(docsRoot + '/js')
+}]
 const vue = [{
     title: 'Vue.js',
     collapsable: false,
@@ -32,11 +32,7 @@ const themeConfig = {
     nav: [
         {
             text: '指南',
-            link: '/guide/guide',
-        },
-        {
-            text: '推荐',
-            link: '/推荐/01.awesome-lib',
+            link: '/guide/about',
         },
         {
             text: 'Vuejs',
@@ -44,7 +40,7 @@ const themeConfig = {
         },
         {
             text: 'JavaScript',
-            link: '/js/基础/01.if-else优化方案',
+            link: '/js/01.if-else优化方案',
         },
         
 
@@ -85,10 +81,9 @@ const themeConfig = {
     ],
 
     sidebar: {
-        '/js/': js,
+        '/js/': Js,
         '/vue/': vue,
         '/guide/': guide,
-        '/推荐/': 推荐,
         '/其他/': 其他,
     },
 };

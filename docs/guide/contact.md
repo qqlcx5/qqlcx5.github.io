@@ -16,6 +16,6 @@
 
 ## 前端有道公众号
 
-如果不想被打扰，可以订阅前端有道公众号，不定时更新优质文章
+订阅公众号，不定时更新优质文章
 
 ![pubic_m](https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@v1.0.0/image/pubic_m.png)
