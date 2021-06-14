@@ -66,9 +66,14 @@ const themeConfig = {
             ]
         },
         {
-            text: '国内文档',
-            link: 'https://qqlcx5.gitee.io/',
-        },
+          text: 'GitHub',
+          ariaLabel: 'Menu',
+          items: [
+              { text: 'GitHub仓库', link: 'https://qqlcx5.github.io/' },
+              { text: 'GitHub', link: 'https://qqlcx5.github.io/' },
+              { text: '国内文档', link: 'https://qqlcx5.gitee.io/' },
+          ]
+        }
         
         // {
         //   text: '主页',

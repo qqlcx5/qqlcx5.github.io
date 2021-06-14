@@ -15,12 +15,12 @@
 
 ### [点击跳转到官网](https://vpn-3.xyz/auth/register?code=1000)
 
-![-w1150](media/16022552238110/16022557765089.jpg)
+![-](https://i.loli.net/2020/10/09/zUZq2ipR76bVWCX.jpg)
 
 ## 免费账号
 
 账号周期短，网速和百度云有得一拼，不能保证需要的的时候能用。
 
 [点击跳转GitHub](https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
-![-w943](media/16022552238110/16022561924149.jpg)
+![-](https://i.loli.net/2020/10/09/EJG7h4URTAYmKgc.jpg)
 

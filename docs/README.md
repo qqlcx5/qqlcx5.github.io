@@ -4,7 +4,7 @@ heroImage: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@v1.0.0/image/qc-play.p
 heroText: 前端有道
 tagline: 分享生活,分享知识
 actionText: 点击开始 →
-actionLink: /guide/about
+actionLink: /guide/contact
 features:
   - title: 前端有道交流群
     details: 提供学习氛围环境，免费解决工作上遇到的困扰
