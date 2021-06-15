@@ -2,7 +2,7 @@
 home: true
 heroImage: 'https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@v1.0.0/image/qc-play.png'
 heroText: 前端有道
-tagline: 嗨！扫一扫上面的公众号，也是对我一种鼓励认可
+tagline: 嗨！扫一扫上面的公众号，也是对我一种鼓励
 actionText: 点击开始 →
 actionLink: /guide/contact
 features:
