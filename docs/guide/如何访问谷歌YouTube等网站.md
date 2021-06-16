@@ -15,7 +15,7 @@
 
 ### [点击跳转到官网](https://vpn-3.xyz/auth/register?code=1000)
 
-![-](https://i.loli.net/2020/10/09/zUZq2ipR76bVWCX.jpg)
+![1](https://i.loli.net/2020/10/09/zUZq2ipR76bVWCX.jpg)
 
 ## 免费账号
 
