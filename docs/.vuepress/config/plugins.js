@@ -1,6 +1,9 @@
 const plugins = [
   // 本地插件
-  // [require('../plugins/vuepress-plugin-musicplayer'), {}],
+  // [require('../plugins/vuepress-plugin-musicplayer'), {
+  //   baseUrl: 'https://netease-cloud-music-api-seven-olive.vercel.app/',
+  //   showAllRank: true,
+  // }],
   // 看板娘插件
   // ['vuepress-plugin-live2d-model', {}],
   // 音乐插件
@@ -15,7 +18,7 @@ const plugins = [
       },
     },
   ],
-  ['cursor-effects', { zIndex: 999 }],
+  ['cursor-effects', { zIndex: 99 }],
   // 代码块复制按钮
   // yarn add vuepress-plugin-one-click-copy -D
   [

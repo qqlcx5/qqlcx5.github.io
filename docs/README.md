@@ -7,10 +7,10 @@ actionText: 点击开始 →
 actionLink: /guide/contact
 features:
   - title: 前端有道交流群
-    details: 有良好的学习氛围环境，解决你遇到的困扰
-  - title: 汇聚更多更好的前端资源
+    details: 有良好的学习氛围环境，解决职业中的困扰
+  - title: 汇聚优质的前端资源
     details: 正所谓工欲善其事，必先利其器
-  - title: 文章
+  - title: 技术文章分享
     details: 尽我所能讲分享学到的知识
 
 footer: MIT Licensed | Copyright © 2020-present Evan You
