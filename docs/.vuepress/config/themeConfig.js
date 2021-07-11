@@ -71,7 +71,8 @@ const themeConfig = {
           items: [
               { text: 'GitHub仓库', link: 'https://qqlcx5.github.io/' },
               { text: 'GitHub', link: 'https://qqlcx5.github.io/' },
-              { text: '国内文档', link: 'https://qqlcx5.gitee.io/' },
+              { text: 'Gitee', link: 'https://qqlcx5.gitee.io/' },
+              { text: 'Vercel', link: 'https://qqlcx5-github-io.vercel.app/' },
           ]
         }
         
