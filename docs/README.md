@@ -11,7 +11,7 @@ features:
   - title: 汇聚优质的前端资源
     details: 正所谓工欲善其事，必先利其器
   - title: 技术文章分享
-    details: 尽我所能讲分享学到的知识
+    details: 尽我所能分享学到的知识
 
 footer: MIT Licensed | Copyright © 2020-present Evan You
 ---
