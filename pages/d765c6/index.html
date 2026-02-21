@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>助你开发更高效的10个Vue指令 | 前端有道</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/star_field.ico">
+    <script src="https://unpkg.com/twikoo@1.5.10/dist/twikoo.all.min.js"></script>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css">
+    <meta name="description" content="前端有道,技术博客,前端,前端开发,前端博客,前端框架,web前端,前端面试,技术文档,学习,面试,JavaScript,js,es6,typeScript,ts,vue,python,css3,html5,node,git,github,markdown,vuepress,react">
+    <meta name="shenma-site-verification" content="f892afc1a8add6e6e6891572ee20bc3d_1652173604">
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <meta name="sogou_site_verification" content="pLC60dtSZc">
+    <meta name="baidu-site-verification" content="code-T8obz32BBI">
+    <meta name="360-site-verification" content="af881508ea01a3f1b32e5c1628ecd05b">
+    <meta name="msvalidate.01" content="c2598f74a60ff811a8155a1092cf4fe0_1652173064">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="keywords" content="前端有道,技术博客,前端,前端开发,前端博客,前端框架,web前端,前端面试,技术文档,学习,面试,JavaScript,js,es6,typeScript,ts,vue,python,css3,html5,node,git,github,markdown,vuepress,react">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <link rel="preload" href="/assets/css/0.styles.19a19f1e.css" as="style"><link rel="preload" href="/assets/js/app.f2cb0e36.js" as="script"><link rel="preload" href="/assets/js/4.52ba796c.js" as="script"><link rel="preload" href="/assets/js/2.b40b70ca.js" as="script"><link rel="preload" href="/assets/js/75.2113ca68.js" as="script"><link rel="preload" href="/assets/js/29.b654ba19.js" as="script"><link rel="prefetch" href="/assets/js/1.c2a23ba8.js"><link rel="prefetch" href="/assets/js/10.30b78787.js"><link rel="prefetch" href="/assets/js/100.803650c9.js"><link rel="prefetch" href="/assets/js/101.8496b5c9.js"><link rel="prefetch" href="/assets/js/102.41b8edc6.js"><link rel="prefetch" href="/assets/js/103.7e28d6f9.js"><link rel="prefetch" href="/assets/js/104.71ee6830.js"><link rel="prefetch" href="/assets/js/105.2e6fb9cd.js"><link rel="prefetch" href="/assets/js/106.2f4f893e.js"><link rel="prefetch" href="/assets/js/107.e7d3eac9.js"><link rel="prefetch" href="/assets/js/108.b78d814d.js"><link rel="prefetch" href="/assets/js/109.b78d1d29.js"><link rel="prefetch" href="/assets/js/11.b4d9f2bd.js"><link rel="prefetch" href="/assets/js/110.3a573d0f.js"><link rel="prefetch" href="/assets/js/111.95edd9f9.js"><link rel="prefetch" href="/assets/js/112.840c20b0.js"><link rel="prefetch" href="/assets/js/113.6aab6b4c.js"><link rel="prefetch" href="/assets/js/114.35790d95.js"><link rel="prefetch" href="/assets/js/115.716f9236.js"><link rel="prefetch" href="/assets/js/116.66ae34d1.js"><link rel="prefetch" href="/assets/js/117.f36ff593.js"><link rel="prefetch" href="/assets/js/118.3ebffa05.js"><link rel="prefetch" href="/assets/js/119.246a4f9b.js"><link rel="prefetch" href="/assets/js/12.8372fc44.js"><link rel="prefetch" href="/assets/js/120.773a9dcc.js"><link rel="prefetch" href="/assets/js/121.4cd95d9d.js"><link rel="prefetch" href="/assets/js/122.67020b4a.js"><link rel="prefetch" href="/assets/js/123.879d5de3.js"><link rel="prefetch" href="/assets/js/124.8fc5bc4e.js"><link rel="prefetch" href="/assets/js/125.b21aefea.js"><link rel="prefetch" href="/assets/js/126.add6d944.js"><link rel="prefetch" href="/assets/js/127.3650c23d.js"><link rel="prefetch" href="/assets/js/128.7a80c67c.js"><link rel="prefetch" href="/assets/js/129.18e90175.js"><link rel="prefetch" href="/assets/js/13.ac9cfd02.js"><link rel="prefetch" href="/assets/js/14.2002d3e5.js"><link rel="prefetch" href="/assets/js/15.ede9e9c3.js"><link rel="prefetch" href="/assets/js/16.0dd9f3de.js"><link rel="prefetch" href="/assets/js/17.f89318dc.js"><link rel="prefetch" href="/assets/js/18.adc13302.js"><link rel="prefetch" href="/assets/js/19.45a006eb.js"><link rel="prefetch" href="/assets/js/20.ed630b78.js"><link rel="prefetch" href="/assets/js/21.39ce5f9a.js"><link rel="prefetch" href="/assets/js/22.12b3d4c7.js"><link rel="prefetch" href="/assets/js/23.1103575d.js"><link rel="prefetch" href="/assets/js/24.59d22e64.js"><link rel="prefetch" href="/assets/js/25.b7baa96e.js"><link rel="prefetch" href="/assets/js/26.e3339714.js"><link rel="prefetch" href="/assets/js/27.e19bd1d0.js"><link rel="prefetch" href="/assets/js/28.06a3d779.js"><link rel="prefetch" href="/assets/js/3.3bc689f7.js"><link rel="prefetch" href="/assets/js/30.0724e350.js"><link rel="prefetch" href="/assets/js/31.91aea1a7.js"><link rel="prefetch" href="/assets/js/32.973f530c.js"><link rel="prefetch" href="/assets/js/33.c0683264.js"><link rel="prefetch" href="/assets/js/34.b675e51a.js"><link rel="prefetch" href="/assets/js/35.e8d5c52b.js"><link rel="prefetch" href="/assets/js/36.c5c09031.js"><link rel="prefetch" href="/assets/js/37.59b21bd2.js"><link rel="prefetch" href="/assets/js/38.0a04a860.js"><link rel="prefetch" href="/assets/js/39.b9776daf.js"><link rel="prefetch" href="/assets/js/40.ce8366f8.js"><link rel="prefetch" href="/assets/js/41.c28cb87d.js"><link rel="prefetch" href="/assets/js/42.3bba8f4e.js"><link rel="prefetch" href="/assets/js/43.5b928245.js"><link rel="prefetch" href="/assets/js/44.035b858f.js"><link rel="prefetch" href="/assets/js/45.03dbbc74.js"><link rel="prefetch" href="/assets/js/46.3c950ed1.js"><link rel="prefetch" href="/assets/js/47.27f8a6e8.js"><link rel="prefetch" href="/assets/js/48.3ee3d9cc.js"><link rel="prefetch" href="/assets/js/49.3441860c.js"><link rel="prefetch" href="/assets/js/5.fd608770.js"><link rel="prefetch" href="/assets/js/50.5b2c231b.js"><link rel="prefetch" href="/assets/js/51.07f3933e.js"><link rel="prefetch" href="/assets/js/52.062e4361.js"><link rel="prefetch" href="/assets/js/53.3da58dac.js"><link rel="prefetch" href="/assets/js/54.6ff39994.js"><link rel="prefetch" href="/assets/js/55.e2a332a2.js"><link rel="prefetch" href="/assets/js/56.c3ea6a73.js"><link rel="prefetch" href="/assets/js/57.10dc49d6.js"><link rel="prefetch" href="/assets/js/58.ce7b8b81.js"><link rel="prefetch" href="/assets/js/59.f88ca8c0.js"><link rel="prefetch" href="/assets/js/6.0361877b.js"><link rel="prefetch" href="/assets/js/60.9b3faf98.js"><link rel="prefetch" href="/assets/js/61.29f5114f.js"><link rel="prefetch" href="/assets/js/62.dbdd909a.js"><link rel="prefetch" href="/assets/js/63.6d9d55a4.js"><link rel="prefetch" href="/assets/js/64.256bbaa5.js"><link rel="prefetch" href="/assets/js/65.0c1d4ef9.js"><link rel="prefetch" href="/assets/js/66.11f3e247.js"><link rel="prefetch" href="/assets/js/67.6dd7645e.js"><link rel="prefetch" href="/assets/js/68.65d4da18.js"><link rel="prefetch" href="/assets/js/69.e3b91a64.js"><link rel="prefetch" href="/assets/js/7.db0ee8b8.js"><link rel="prefetch" href="/assets/js/70.01113a3d.js"><link rel="prefetch" href="/assets/js/71.19a46205.js"><link rel="prefetch" href="/assets/js/72.85678f2f.js"><link rel="prefetch" href="/assets/js/73.550df0b0.js"><link rel="prefetch" href="/assets/js/74.c700d0a1.js"><link rel="prefetch" href="/assets/js/76.3ed80b05.js"><link rel="prefetch" href="/assets/js/77.95532af6.js"><link rel="prefetch" href="/assets/js/78.a1a8e47a.js"><link rel="prefetch" href="/assets/js/79.d8051b28.js"><link rel="prefetch" href="/assets/js/80.33b1d6d1.js"><link rel="prefetch" href="/assets/js/81.7f70af67.js"><link rel="prefetch" href="/assets/js/82.6b0a1fe4.js"><link rel="prefetch" href="/assets/js/83.88183ca4.js"><link rel="prefetch" href="/assets/js/84.4436605e.js"><link rel="prefetch" href="/assets/js/85.0b58f99a.js"><link rel="prefetch" href="/assets/js/86.6e3daf43.js"><link rel="prefetch" href="/assets/js/87.19f27515.js"><link rel="prefetch" href="/assets/js/88.f87ec452.js"><link rel="prefetch" href="/assets/js/89.deba264e.js"><link rel="prefetch" href="/assets/js/90.6777d500.js"><link rel="prefetch" href="/assets/js/91.11d802ae.js"><link rel="prefetch" href="/assets/js/92.9e51b548.js"><link rel="prefetch" href="/assets/js/93.ef299757.js"><link rel="prefetch" href="/assets/js/94.b4fcb24d.js"><link rel="prefetch" href="/assets/js/95.21dd552b.js"><link rel="prefetch" href="/assets/js/96.9c079966.js"><link rel="prefetch" href="/assets/js/97.ab173863.js"><link rel="prefetch" href="/assets/js/98.6ee46920.js"><link rel="prefetch" href="/assets/js/99.b68447ce.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.38838867.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.19a19f1e.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu have-body-img"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/star_field.ico" alt="前端有道" class="logo"> <span class="site-name can-hide">前端有道</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/nav/" class="nav-link">导航</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">算法</a></div><div class="nav-item"><a href="/web/" class="nav-link">开发</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><a href="/tools/" class="link-title">工具</a> <span class="title" style="display:none;">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Git</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/af5021/" class="nav-link">Git导读</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏夹" class="dropdown-title"><a href="/bookmarks/" class="link-title">收藏夹</a> <span class="title" style="display:none;">收藏夹</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://feyoudao.cn/coder-bookmarks/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  收藏夹
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.cn/nutils-js-site/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  工具库
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.netlify.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  netlify Vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vercel Vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.cn/vuepress-next/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vuepress2.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao-next.netlify.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  netlify Vuepress2.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/message-area/" class="nav-link">留言区</a></div><div class="nav-item"><a href="/entertainment/" class="nav-link">娱乐</a></div><div class="nav-item"><a href="/about/me/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">时间轴</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/star_field.png"> <div class="blogger-info"><h3>星野</h3> <span>给岁月以文明</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/nav/" class="nav-link">导航</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">算法</a></div><div class="nav-item"><a href="/web/" class="nav-link">开发</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><a href="/tools/" class="link-title">工具</a> <span class="title" style="display:none;">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Git</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/af5021/" class="nav-link">Git导读</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏夹" class="dropdown-title"><a href="/bookmarks/" class="link-title">收藏夹</a> <span class="title" style="display:none;">收藏夹</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://feyoudao.cn/coder-bookmarks/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  收藏夹
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.cn/nutils-js-site/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  工具库
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.netlify.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  netlify Vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vercel Vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.cn/vuepress-next/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vuepress2.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao-next.netlify.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  netlify Vuepress2.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/message-area/" class="nav-link">留言区</a></div><div class="nav-item"><a href="/entertainment/" class="nav-link">娱乐</a></div><div class="nav-item"><a href="/about/me/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">时间轴</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基础知识</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>工程化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>组件库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ES6-ES12</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Vue2</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/8466b6/" class="sidebar-link">令人眼前一亮的Vue实战技巧</a></li><li><a href="/pages/d765c6/" aria-current="page" class="active sidebar-link">助你开发更高效的10个Vue指令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/d765c6/#前言" class="sidebar-link">前言</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/d765c6/#_1-vue-lazyload" class="sidebar-link">1.Vue-Lazyload</a></li><li class="sidebar-sub-header level3"><a href="/pages/d765c6/#_2-vue-infinite-scroll" class="sidebar-link">2.Vue-Infinite-Scroll</a></li><li class="sidebar-sub-header level3"><a href="/pages/d765c6/#_3-vue-focus" class="sidebar-link">3.Vue-Focus</a></li><li class="sidebar-sub-header level3"><a href="/pages/d765c6/#_4-vue-blur" class="sidebar-link">4.Vue-Blur</a></li><li class="sidebar-sub-header level3"><a href="/pages/d765c6/#_5-v-clipboard" class="sidebar-link">5.V-Clipboard</a></li><li class="sidebar-sub-header level3"><a href="/pages/d765c6/#_6-vue-scrollto" class="sidebar-link">6.Vue-ScrollTo</a></li><li class="sidebar-sub-header level3"><a href="/pages/d765c6/#_7-v-hotkey" class="sidebar-link">7.V-Hotkey</a></li><li class="sidebar-sub-header level3"><a href="/pages/d765c6/#_8-v-click-outside" class="sidebar-link">8.V-Click-Outside</a></li><li class="sidebar-sub-header level3"><a href="/pages/d765c6/#_9-v-scroll-lock" class="sidebar-link">9.V-Scroll-Lock</a></li><li class="sidebar-sub-header level3"><a href="/pages/d765c6/#_10-v-tooltip" class="sidebar-link">10.V-Tooltip</a></li><li class="sidebar-sub-header level3"><a href="/pages/d765c6/#总结" class="sidebar-link">总结</a></li></ul></li></ul></li><li><a href="/pages/4c7316/" class="sidebar-link">理解Vue响应式数据变化</a></li><li><a href="/pages/40f989/" class="sidebar-link">Vue父子组件的生命周期</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue3</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>webpack</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-2270362a><div class="articleInfo" data-v-2270362a><ul class="breadcrumbs" data-v-2270362a><li data-v-2270362a><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-2270362a></a></li> <li data-v-2270362a><a href="/web/#开发" data-v-2270362a>开发</a></li><li data-v-2270362a><a href="/web/#Vue2" data-v-2270362a>Vue2</a></li></ul> <div class="info" data-v-2270362a><div title="作者" class="author iconfont icon-touxiang" data-v-2270362a><a href="https://github.com/qqlcx5" target="_blank" title="作者" class="beLink" data-v-2270362a>星野</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-2270362a><a href="javascript:;" data-v-2270362a>2022-01-08</a></div> <!----> <div class="page-view" style="margin-left:0;" data-v-9045f728 data-v-2270362a><div title="文章字数" class="book-words iconfont icon-book" data-v-9045f728><a href="javascript:;" style="margin-left: 3px; color: #888" data-v-9045f728>0</a></div> <!----> <div title="浏览量" class="page-view iconfont icon-view" data-v-9045f728><a href="javascript:;" id="busuanzi_value_page_pv" class="view-data" style="color: #888; margin-left: 3px" data-v-9045f728><i title="正在获取..." class="loading iconfont icon-loading" data-v-9045f728></i></a></div></div></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">助你开发更高效的10个Vue指令<!----></h1> <!----> <div class="theme-vdoing-content content__default"><h1 id="助你开发更高效的-10-个-vue-指令"><a href="#助你开发更高效的-10-个-vue-指令" class="header-anchor">#</a> 助你开发更高效的 10 个 Vue 指令</h1> <blockquote><p>说明：本章内容来源<a href="https://dev.to/simonholdorf/10-vue-directives-that-make-your-dev-lives-easier-5dm7/" target="_blank" rel="noopener noreferrer">https://dev.to/simonholdorf/10-vue-directives-that-make-your-dev-lives-easier-5dm7/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>Vue.js 最大的特点之一就是它有内置的指令，就像最初的 AngularJS 一样(这是人们认为 Vue 像 Angular 的原因之一)。 这些指令使开发更加容易，但更好的是，您可以编写自己的自定义指令。在本文中，我将向您展示由 Vue 社区制作 10 个很酷的指令，您可以立即在项目中使用它们，以节省您的时间和精力，并将您的 Vue 项目提升到一个新的水平。</p> <h3 id="_1-vue-lazyload"><a href="#_1-vue-lazyload" class="header-anchor">#</a> 1.Vue-Lazyload</h3> <p>这个项目在 Github 上有超过 5800 个 Star，Hilongjw 的 Vue-Lazyload 可让你无延迟地懒加载图片！</p> <p>项目地址：<code>https://github.com/hilongjw/vue-lazyload</code></p> <p>安装方式：<code>npm i vue-lazyload -S</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;img v-lazy=&quot;https://www.example.com/example-image.jpg&quot;&gt;
+&lt;/template&gt;
+</code></pre></div><p>效果演示：</p> <p><img src="https://user-gold-cdn.xitu.io/2019/12/21/16f2805de61662a4?w=412&amp;h=482&amp;f=gif&amp;s=2234087" alt=""></p> <h3 id="_2-vue-infinite-scroll"><a href="#_2-vue-infinite-scroll" class="header-anchor">#</a> 2.Vue-Infinite-Scroll</h3> <p>如果您想在访问者到达底部时在网页上加载新元素，这会是一个很好且易于实现的指令。当滚动到页面底部时，将执行绑定到 v-infinite-scroll 的方法。</p> <p>项目地址：<code>https://github.com/ElemeFE/vue-infinite-scroll</code></p> <p>安装方式：<code>npm install vue-infinite-scroll --save</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  /* your website code   */
+  &lt;div
+    v-infinite-scroll=&quot;onLoadMore&quot;
+    infinite-scroll-disabled=&quot;busy&quot;
+    infinite-scroll-distance=&quot;10&quot;
+  &gt;&lt;/div&gt;
+&lt;template&gt;
+
+&lt;script&gt;
+export default {
+  data() {
+    return {
+      data [],
+      busy: false,
+      count: 0
+    }
+  },
+  methods: {
+    onLoadMore() {
+      this.busy = true;
+      setTimeout(() =&gt; {
+        for (var i = 0, j = 10; i &lt; j; i++) {
+          this.data.push({ name: this.count++ });
+        }
+        this.busy = false;
+      }, 1000);
+    }
+  }
+}
+&lt;/script&gt;
+</code></pre></div><h3 id="_3-vue-focus"><a href="#_3-vue-focus" class="header-anchor">#</a> 3.Vue-Focus</h3> <p>有时在 Web 开发中，管理输入焦点可能很棘手。Vue-Focus 可以帮助您直接从视图模型管理焦点。</p> <p>项目地址：<code>https://github.com/simplesmiler/vue-focus</code></p> <p>安装方式：<code>npm install vue-focus --save</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;button @click=&quot;focusedElement = true&quot;&gt;Input gets Focus&lt;/button&gt;
+  &lt;input type=&quot;text&quot; v-focus=&quot;focusedElement&quot;&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data: function() {
+    return {
+      focusedElement: false,
+    };
+  },
+};
+&lt;/script&gt;
+</code></pre></div><p>效果演示：</p> <h3 id="_4-vue-blur"><a href="#_4-vue-blur" class="header-anchor">#</a> 4.Vue-Blur</h3> <p>如果你的页面在访客尚未注册的时候，有些部分需要加上半透明遮罩，那么 Vue-Blur 是一个不错的选择。它还带有用于自定义参数的选项，例如不透明度，过滤器和状态之间的转换。</p> <p>项目地址：<code>https://github.com/ndelvalle/v-blur</code></p> <p>安装方式：<code>npm install --save v-blur</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  /* Use this with a boolean value (true/false) */
+  &lt;div v-blur=&quot;isBlurred&quot;&gt;&lt;/div&gt;
+
+  /* Use this with an object that uses values from the config */
+  &lt;div v-blur=&quot;blurConfig&quot;&gt;&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  export default {
+      data () {
+        return {
+          isBlurred: true, // activate and deactivate based on a boolean value
+          blurConfig: {
+            isBlurred: false, // activate and deactivate based on a boolean value and also provide a config
+            opacity: 0.3,
+            filter: 'blur(1.2px)',
+            transition: 'all .3s linear'
+          }
+        }
+      }
+    }
+  };
+&lt;/script&gt;
+</code></pre></div><p>效果演示：</p> <p><img src="https://user-gold-cdn.xitu.io/2019/12/21/16f285da75153b0a?w=568&amp;h=374&amp;f=gif&amp;s=134782" alt=""></p> <h3 id="_5-v-clipboard"><a href="#_5-v-clipboard" class="header-anchor">#</a> 5.V-Clipboard</h3> <p>这是一个小巧而实用的包，您可以使用它将值从元素复制到用户的剪贴板，而不必实现大量的逻辑。它可以复制静态或动态值，当元素被点击时，指令的值会被复制到剪贴板上。用户需要复制代码片段的时候，这个就排上用场。</p> <p>项目地址：<code>https://github.com/euvl/v-clipboard</code></p> <p>安装方式：<code>npm install --save v-clipboard</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;button v-clipboard='valueToCopy'&gt;Copy to clipboard&lt;/button&gt;
+  // 当单击包含v-clipboard指令的元素时，valueToCopy的值将被复制到剪贴板中
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data() {
+    return {
+      valueToCopy: &quot;Some Text&quot;
+    }
+  }
+};
+&lt;/script&gt;
+</code></pre></div><h3 id="_6-vue-scrollto"><a href="#_6-vue-scrollto" class="header-anchor">#</a> 6.Vue-ScrollTo</h3> <p>滚动元素从未如此简单！ 你可以监听元素上的点击事件，让浏览器滚动到给定的标签，这对于处理文章目录跳转和导航跳转非常有用！</p> <p>项目地址：<code>https://github.com/rigor789/vue-scrollTo</code></p> <p>安装方式：<code>npm install --save vue-scrollto</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;button v-scroll-to=&quot;'#element'&quot;&gt;Scroll to #element as the target&lt;/button&gt;
+  &lt;h1 id='element'&gt;Hi. I'm element&lt;/h1&gt;
+&lt;/template&gt;
+</code></pre></div><p>效果演示：
+<img src="https://user-gold-cdn.xitu.io/2019/12/21/16f28ba3b7e45fc3?w=467&amp;h=132&amp;f=gif&amp;s=29774" alt=""></p> <h3 id="_7-v-hotkey"><a href="#_7-v-hotkey" class="header-anchor">#</a> 7.V-Hotkey</h3> <p>这个自定义指令可以使您可以轻松地将快捷键绑定到组件,而且可以给组件绑定一个或多个快捷键。比如你想要通过按下 <code>esc</code>键后隐藏某个组件，按住<code>ctrl+enter</code> 再显示它,下面代码便可轻松实现：</p> <p>项目地址：<code>https://github.com/Dafrok/v-hotkey</code></p> <p>安装方式：<code>npm i --save v-hotkey</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div v-show=&quot;show&quot;
+       v-hotkey=&quot;{
+      'esc': onClose,
+      'ctrl+enter': onShow
+    }&quot;&gt;
+    Hold `esc` to close me! Press `ctrl+enter` to open me!
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data () {
+    return {
+      show: true
+    }
+  },
+  methods: {
+    onClose () {
+      this.show = false
+    },
+    onShow () {
+      this.show = true
+    }
+  }
+}
+&lt;/script&gt;
+</code></pre></div><h3 id="_8-v-click-outside"><a href="#_8-v-click-outside" class="header-anchor">#</a> 8.V-Click-Outside</h3> <p>这是一个很棒的指令，可以在不停止事件传播的情况下对单击元素上的事件做出反应。这对于关闭对话框、菜单等非常有用。</p> <p>项目地址：<code>https://github.com/ndelvalle/v-click-outside</code></p> <p>安装方式：<code>npm install --save v-click-outside</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div v-show=&quot;show&quot; v-click-outside=&quot;onClickOutside&quot;&gt;
+    Hide the element if a click event outside is triggered
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data() {
+    return {
+      show: true
+    };
+  },
+  methods: {
+    onClickOutside() {
+      console.log(11111);
+      this.show = false;
+    }
+  }
+};
+&lt;/script&gt;
+</code></pre></div><p>效果演示：</p> <p><img src="https://user-gold-cdn.xitu.io/2019/12/21/16f28fbfa370c816?w=590&amp;h=235&amp;f=gif&amp;s=33892" alt=""></p> <h3 id="_9-v-scroll-lock"><a href="#_9-v-scroll-lock" class="header-anchor">#</a> 9.V-Scroll-Lock</h3> <p>这个指令的作用是在打开模态浮层的时候防止下层的元素滚动。在处理多个设备时，这尤其有用！</p> <p>项目地址：<code>https://github.com/phegman/v-scroll-lock</code></p> <p>安装方式：<code>npm install v-scroll-lock --save</code></p> <p>使用场景：<code>https://v-scroll-lock.peterhegman.com/</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div class=&quot;modal&quot; v-if=&quot;open&quot;&gt;
+    &lt;button @click=&quot;closeModal&quot;&gt;X&lt;/button&gt;
+    &lt;div class=&quot;modal-content&quot; v-scroll-lock=&quot;open&quot;&gt;
+      &lt;p&gt;A bunch of scrollable modal content&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: 'Modal',
+  data () {
+    return {
+      open: false
+    }
+  },
+  methods: {
+    openModal () {
+      this.open = true
+    },
+    closeModal () {
+      this.open = false
+    }
+  }
+}
+&lt;/script&gt;
+</code></pre></div><h3 id="_10-v-tooltip"><a href="#_10-v-tooltip" class="header-anchor">#</a> 10.V-Tooltip</h3> <p>Akryum 的这个很酷的软件包为您提供了一个很棒的工具提示指令。只需将一些文本绑定到 v-tooltip，就可以了。</p> <p>项目地址：<code>https://github.com/Akryum/v-tooltip</code></p> <p>安装方式：<code>npm install --save v-tooltip</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;p&gt;
+      &lt;input v-model=&quot;message&quot; placeholder=&quot;Message&quot;&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;span v-tooltip=&quot;message&quot;&gt;{{ message }}&lt;/span&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre></div><h3 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h3> <p>在本文中，我收集了 10 个很棒的自定义 Vue 指令，您可以在未来的项目中使用这些指令，而不必每次都自己重新造轮子。</p></div></div> <!----> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/05/09, 06:48:29</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/8466b6/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">令人眼前一亮的Vue实战技巧</div></a> <a href="/pages/4c7316/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">理解Vue响应式数据变化</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/8466b6/" class="prev">令人眼前一亮的Vue实战技巧</a></span> <span class="next"><a href="/pages/4c7316/">理解Vue响应式数据变化</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/20730e/"><div>
+            图解Git
+            <!----></div></a> <span class="date">05-10</span></dt></dl><dl><dd>02</dd> <dt><a href="/about/error/"><div>
+            关于 - 网站错误反馈
+            <!----></div></a> <span class="date">05-10</span></dt></dl><dl><dd>03</dd> <dt><a href="/about/appreciate/"><div>
+            关于 - 赞赏❤️的用途
+            <!----></div></a> <span class="date">05-10</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><a href="https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/public_logo.jpeg" target="_blank"><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="24"> 加入前端有道交流群</a>
+    | Copyright © 2018-2026
+    <span>星野 | <a href="https://github.com/qqlcx5/frontend/blob/master/LICENSE" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <div class="body-bg" style="background:url() center center / cover no-repeat;opacity:0.5;"></div> <!----> <!----></div><div class="global-ui"><!----><div id="tcomment"></div></div></div>
+    <script src="/assets/js/app.f2cb0e36.js" defer></script><script src="/assets/js/4.52ba796c.js" defer></script><script src="/assets/js/2.b40b70ca.js" defer></script><script src="/assets/js/75.2113ca68.js" defer></script><script src="/assets/js/29.b654ba19.js" defer></script>
+  </body>
+</html>

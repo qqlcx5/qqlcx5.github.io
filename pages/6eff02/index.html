@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>代码被吐槽有什么好的优化方案 | 前端有道</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/star_field.ico">
+    <script src="https://unpkg.com/twikoo@1.5.10/dist/twikoo.all.min.js"></script>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css">
+    <meta name="description" content="前端有道,技术博客,前端,前端开发,前端博客,前端框架,web前端,前端面试,技术文档,学习,面试,JavaScript,js,es6,typeScript,ts,vue,python,css3,html5,node,git,github,markdown,vuepress,react">
+    <meta name="shenma-site-verification" content="f892afc1a8add6e6e6891572ee20bc3d_1652173604">
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <meta name="sogou_site_verification" content="pLC60dtSZc">
+    <meta name="baidu-site-verification" content="code-T8obz32BBI">
+    <meta name="360-site-verification" content="af881508ea01a3f1b32e5c1628ecd05b">
+    <meta name="msvalidate.01" content="c2598f74a60ff811a8155a1092cf4fe0_1652173064">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="keywords" content="前端有道,技术博客,前端,前端开发,前端博客,前端框架,web前端,前端面试,技术文档,学习,面试,JavaScript,js,es6,typeScript,ts,vue,python,css3,html5,node,git,github,markdown,vuepress,react">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <link rel="preload" href="/assets/css/0.styles.19a19f1e.css" as="style"><link rel="preload" href="/assets/js/app.f2cb0e36.js" as="script"><link rel="preload" href="/assets/js/4.52ba796c.js" as="script"><link rel="preload" href="/assets/js/2.b40b70ca.js" as="script"><link rel="preload" href="/assets/js/68.65d4da18.js" as="script"><link rel="preload" href="/assets/js/29.b654ba19.js" as="script"><link rel="prefetch" href="/assets/js/1.c2a23ba8.js"><link rel="prefetch" href="/assets/js/10.30b78787.js"><link rel="prefetch" href="/assets/js/100.803650c9.js"><link rel="prefetch" href="/assets/js/101.8496b5c9.js"><link rel="prefetch" href="/assets/js/102.41b8edc6.js"><link rel="prefetch" href="/assets/js/103.7e28d6f9.js"><link rel="prefetch" href="/assets/js/104.71ee6830.js"><link rel="prefetch" href="/assets/js/105.2e6fb9cd.js"><link rel="prefetch" href="/assets/js/106.2f4f893e.js"><link rel="prefetch" href="/assets/js/107.e7d3eac9.js"><link rel="prefetch" href="/assets/js/108.b78d814d.js"><link rel="prefetch" href="/assets/js/109.b78d1d29.js"><link rel="prefetch" href="/assets/js/11.b4d9f2bd.js"><link rel="prefetch" href="/assets/js/110.3a573d0f.js"><link rel="prefetch" href="/assets/js/111.95edd9f9.js"><link rel="prefetch" href="/assets/js/112.840c20b0.js"><link rel="prefetch" href="/assets/js/113.6aab6b4c.js"><link rel="prefetch" href="/assets/js/114.35790d95.js"><link rel="prefetch" href="/assets/js/115.716f9236.js"><link rel="prefetch" href="/assets/js/116.66ae34d1.js"><link rel="prefetch" href="/assets/js/117.f36ff593.js"><link rel="prefetch" href="/assets/js/118.3ebffa05.js"><link rel="prefetch" href="/assets/js/119.246a4f9b.js"><link rel="prefetch" href="/assets/js/12.8372fc44.js"><link rel="prefetch" href="/assets/js/120.773a9dcc.js"><link rel="prefetch" href="/assets/js/121.4cd95d9d.js"><link rel="prefetch" href="/assets/js/122.67020b4a.js"><link rel="prefetch" href="/assets/js/123.879d5de3.js"><link rel="prefetch" href="/assets/js/124.8fc5bc4e.js"><link rel="prefetch" href="/assets/js/125.b21aefea.js"><link rel="prefetch" href="/assets/js/126.add6d944.js"><link rel="prefetch" href="/assets/js/127.3650c23d.js"><link rel="prefetch" href="/assets/js/128.7a80c67c.js"><link rel="prefetch" href="/assets/js/129.18e90175.js"><link rel="prefetch" href="/assets/js/13.ac9cfd02.js"><link rel="prefetch" href="/assets/js/14.2002d3e5.js"><link rel="prefetch" href="/assets/js/15.ede9e9c3.js"><link rel="prefetch" href="/assets/js/16.0dd9f3de.js"><link rel="prefetch" href="/assets/js/17.f89318dc.js"><link rel="prefetch" href="/assets/js/18.adc13302.js"><link rel="prefetch" href="/assets/js/19.45a006eb.js"><link rel="prefetch" href="/assets/js/20.ed630b78.js"><link rel="prefetch" href="/assets/js/21.39ce5f9a.js"><link rel="prefetch" href="/assets/js/22.12b3d4c7.js"><link rel="prefetch" href="/assets/js/23.1103575d.js"><link rel="prefetch" href="/assets/js/24.59d22e64.js"><link rel="prefetch" href="/assets/js/25.b7baa96e.js"><link rel="prefetch" href="/assets/js/26.e3339714.js"><link rel="prefetch" href="/assets/js/27.e19bd1d0.js"><link rel="prefetch" href="/assets/js/28.06a3d779.js"><link rel="prefetch" href="/assets/js/3.3bc689f7.js"><link rel="prefetch" href="/assets/js/30.0724e350.js"><link rel="prefetch" href="/assets/js/31.91aea1a7.js"><link rel="prefetch" href="/assets/js/32.973f530c.js"><link rel="prefetch" href="/assets/js/33.c0683264.js"><link rel="prefetch" href="/assets/js/34.b675e51a.js"><link rel="prefetch" href="/assets/js/35.e8d5c52b.js"><link rel="prefetch" href="/assets/js/36.c5c09031.js"><link rel="prefetch" href="/assets/js/37.59b21bd2.js"><link rel="prefetch" href="/assets/js/38.0a04a860.js"><link rel="prefetch" href="/assets/js/39.b9776daf.js"><link rel="prefetch" href="/assets/js/40.ce8366f8.js"><link rel="prefetch" href="/assets/js/41.c28cb87d.js"><link rel="prefetch" href="/assets/js/42.3bba8f4e.js"><link rel="prefetch" href="/assets/js/43.5b928245.js"><link rel="prefetch" href="/assets/js/44.035b858f.js"><link rel="prefetch" href="/assets/js/45.03dbbc74.js"><link rel="prefetch" href="/assets/js/46.3c950ed1.js"><link rel="prefetch" href="/assets/js/47.27f8a6e8.js"><link rel="prefetch" href="/assets/js/48.3ee3d9cc.js"><link rel="prefetch" href="/assets/js/49.3441860c.js"><link rel="prefetch" href="/assets/js/5.fd608770.js"><link rel="prefetch" href="/assets/js/50.5b2c231b.js"><link rel="prefetch" href="/assets/js/51.07f3933e.js"><link rel="prefetch" href="/assets/js/52.062e4361.js"><link rel="prefetch" href="/assets/js/53.3da58dac.js"><link rel="prefetch" href="/assets/js/54.6ff39994.js"><link rel="prefetch" href="/assets/js/55.e2a332a2.js"><link rel="prefetch" href="/assets/js/56.c3ea6a73.js"><link rel="prefetch" href="/assets/js/57.10dc49d6.js"><link rel="prefetch" href="/assets/js/58.ce7b8b81.js"><link rel="prefetch" href="/assets/js/59.f88ca8c0.js"><link rel="prefetch" href="/assets/js/6.0361877b.js"><link rel="prefetch" href="/assets/js/60.9b3faf98.js"><link rel="prefetch" href="/assets/js/61.29f5114f.js"><link rel="prefetch" href="/assets/js/62.dbdd909a.js"><link rel="prefetch" href="/assets/js/63.6d9d55a4.js"><link rel="prefetch" href="/assets/js/64.256bbaa5.js"><link rel="prefetch" href="/assets/js/65.0c1d4ef9.js"><link rel="prefetch" href="/assets/js/66.11f3e247.js"><link rel="prefetch" href="/assets/js/67.6dd7645e.js"><link rel="prefetch" href="/assets/js/69.e3b91a64.js"><link rel="prefetch" href="/assets/js/7.db0ee8b8.js"><link rel="prefetch" href="/assets/js/70.01113a3d.js"><link rel="prefetch" href="/assets/js/71.19a46205.js"><link rel="prefetch" href="/assets/js/72.85678f2f.js"><link rel="prefetch" href="/assets/js/73.550df0b0.js"><link rel="prefetch" href="/assets/js/74.c700d0a1.js"><link rel="prefetch" href="/assets/js/75.2113ca68.js"><link rel="prefetch" href="/assets/js/76.3ed80b05.js"><link rel="prefetch" href="/assets/js/77.95532af6.js"><link rel="prefetch" href="/assets/js/78.a1a8e47a.js"><link rel="prefetch" href="/assets/js/79.d8051b28.js"><link rel="prefetch" href="/assets/js/80.33b1d6d1.js"><link rel="prefetch" href="/assets/js/81.7f70af67.js"><link rel="prefetch" href="/assets/js/82.6b0a1fe4.js"><link rel="prefetch" href="/assets/js/83.88183ca4.js"><link rel="prefetch" href="/assets/js/84.4436605e.js"><link rel="prefetch" href="/assets/js/85.0b58f99a.js"><link rel="prefetch" href="/assets/js/86.6e3daf43.js"><link rel="prefetch" href="/assets/js/87.19f27515.js"><link rel="prefetch" href="/assets/js/88.f87ec452.js"><link rel="prefetch" href="/assets/js/89.deba264e.js"><link rel="prefetch" href="/assets/js/90.6777d500.js"><link rel="prefetch" href="/assets/js/91.11d802ae.js"><link rel="prefetch" href="/assets/js/92.9e51b548.js"><link rel="prefetch" href="/assets/js/93.ef299757.js"><link rel="prefetch" href="/assets/js/94.b4fcb24d.js"><link rel="prefetch" href="/assets/js/95.21dd552b.js"><link rel="prefetch" href="/assets/js/96.9c079966.js"><link rel="prefetch" href="/assets/js/97.ab173863.js"><link rel="prefetch" href="/assets/js/98.6ee46920.js"><link rel="prefetch" href="/assets/js/99.b68447ce.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.38838867.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.19a19f1e.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu have-body-img"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/star_field.ico" alt="前端有道" class="logo"> <span class="site-name can-hide">前端有道</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/nav/" class="nav-link">导航</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">算法</a></div><div class="nav-item"><a href="/web/" class="nav-link">开发</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><a href="/tools/" class="link-title">工具</a> <span class="title" style="display:none;">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Git</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/af5021/" class="nav-link">Git导读</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏夹" class="dropdown-title"><a href="/bookmarks/" class="link-title">收藏夹</a> <span class="title" style="display:none;">收藏夹</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://feyoudao.cn/coder-bookmarks/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  收藏夹
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.cn/nutils-js-site/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  工具库
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.netlify.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  netlify Vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vercel Vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.cn/vuepress-next/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vuepress2.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao-next.netlify.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  netlify Vuepress2.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/message-area/" class="nav-link">留言区</a></div><div class="nav-item"><a href="/entertainment/" class="nav-link">娱乐</a></div><div class="nav-item"><a href="/about/me/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">时间轴</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/star_field.png"> <div class="blogger-info"><h3>星野</h3> <span>给岁月以文明</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/nav/" class="nav-link">导航</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">算法</a></div><div class="nav-item"><a href="/web/" class="nav-link">开发</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><a href="/tools/" class="link-title">工具</a> <span class="title" style="display:none;">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Git</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/af5021/" class="nav-link">Git导读</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏夹" class="dropdown-title"><a href="/bookmarks/" class="link-title">收藏夹</a> <span class="title" style="display:none;">收藏夹</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://feyoudao.cn/coder-bookmarks/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  收藏夹
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.cn/nutils-js-site/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  工具库
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.netlify.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  netlify Vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vercel Vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao.cn/vuepress-next/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vuepress2.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://feyoudao-next.netlify.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  netlify Vuepress2.0
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/message-area/" class="nav-link">留言区</a></div><div class="nav-item"><a href="/entertainment/" class="nav-link">娱乐</a></div><div class="nav-item"><a href="/about/me/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">时间轴</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基础知识</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>工程化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>组件库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>ES6-ES12</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/6eff02/" aria-current="page" class="active sidebar-link">代码被吐槽有什么好的优化方案</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/6eff02/#一、关于取值的吐槽" class="sidebar-link">一、关于取值的吐槽</a></li><li class="sidebar-sub-header level2"><a href="/pages/6eff02/#二、关于合并数据的吐槽" class="sidebar-link">二、关于合并数据的吐槽</a></li><li class="sidebar-sub-header level2"><a href="/pages/6eff02/#三、关于拼接字符串的吐槽" class="sidebar-link">三、关于拼接字符串的吐槽</a></li><li class="sidebar-sub-header level2"><a href="/pages/6eff02/#四、关于if中判断条件的吐槽" class="sidebar-link">四、关于if中判断条件的吐槽</a></li><li class="sidebar-sub-header level2"><a href="/pages/6eff02/#五、关于列表搜索的吐槽" class="sidebar-link">五、关于列表搜索的吐槽</a></li><li class="sidebar-sub-header level2"><a href="/pages/6eff02/#六、关于扁平化数组的吐槽" class="sidebar-link">六、关于扁平化数组的吐槽</a></li><li class="sidebar-sub-header level2"><a href="/pages/6eff02/#七、关于获取对象属性值的吐槽" class="sidebar-link">七、关于获取对象属性值的吐槽</a></li><li class="sidebar-sub-header level2"><a href="/pages/6eff02/#八、关于添加对象属性的吐槽" class="sidebar-link">八、关于添加对象属性的吐槽</a></li><li class="sidebar-sub-header level2"><a href="/pages/6eff02/#九、关于输入框非空的判断" class="sidebar-link">九、关于输入框非空的判断</a></li><li class="sidebar-sub-header level2"><a href="/pages/6eff02/#十、关于异步函数的吐槽" class="sidebar-link">十、关于异步函数的吐槽</a></li></ul></li><li><a href="/pages/a3ded1/" class="sidebar-link">ES12令人期待的新特性</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue2</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue3</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>webpack</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-2270362a><div class="articleInfo" data-v-2270362a><ul class="breadcrumbs" data-v-2270362a><li data-v-2270362a><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-2270362a></a></li> <li data-v-2270362a><a href="/web/#开发" data-v-2270362a>开发</a></li><li data-v-2270362a><a href="/web/#ES6-ES12" data-v-2270362a>ES6-ES12</a></li></ul> <div class="info" data-v-2270362a><div title="作者" class="author iconfont icon-touxiang" data-v-2270362a><a href="https://github.com/qqlcx5" target="_blank" title="作者" class="beLink" data-v-2270362a>星野</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-2270362a><a href="javascript:;" data-v-2270362a>2022-01-08</a></div> <!----> <div class="page-view" style="margin-left:0;" data-v-9045f728 data-v-2270362a><div title="文章字数" class="book-words iconfont icon-book" data-v-9045f728><a href="javascript:;" style="margin-left: 3px; color: #888" data-v-9045f728>0</a></div> <!----> <div title="浏览量" class="page-view iconfont icon-view" data-v-9045f728><a href="javascript:;" id="busuanzi_value_page_pv" class="view-data" style="color: #888; margin-left: 3px" data-v-9045f728><i title="正在获取..." class="loading iconfont icon-loading" data-v-9045f728></i></a></div></div></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">代码被吐槽有什么好的优化方案<!----></h1> <!----> <div class="theme-vdoing-content content__default"><h2 id="一、关于取值的吐槽"><a href="#一、关于取值的吐槽" class="header-anchor">#</a> 一、关于取值的吐槽</h2> <p>取值在程序中非常常见，比如从对象<code>obj</code>中取值。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">a</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">b</span><span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">c</span><span class="token operator">:</span><span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">d</span><span class="token operator">:</span><span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">e</span><span class="token operator">:</span><span class="token number">5</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p><strong>吐槽</strong>：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> a <span class="token operator">=</span> obj<span class="token punctuation">.</span>a<span class="token punctuation">;</span>
+<span class="token keyword">const</span> b <span class="token operator">=</span> obj<span class="token punctuation">.</span>b<span class="token punctuation">;</span>
+<span class="token keyword">const</span> c <span class="token operator">=</span> obj<span class="token punctuation">.</span>c<span class="token punctuation">;</span>
+<span class="token keyword">const</span> d <span class="token operator">=</span> obj<span class="token punctuation">.</span>d<span class="token punctuation">;</span>
+<span class="token keyword">const</span> e <span class="token operator">=</span> obj<span class="token punctuation">.</span>e<span class="token punctuation">;</span>
+</code></pre></div><p>或者</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> f <span class="token operator">=</span> obj<span class="token punctuation">.</span>a <span class="token operator">+</span> obj<span class="token punctuation">.</span>d<span class="token punctuation">;</span>
+<span class="token keyword">const</span> g <span class="token operator">=</span> obj<span class="token punctuation">.</span>c <span class="token operator">+</span> obj<span class="token punctuation">.</span>e<span class="token punctuation">;</span>
+
+</code></pre></div><p>吐槽：“不会用ES6的解构赋值来取值吗？5行代码用1行代码搞定不香吗？直接用对象名加属性名去取值，要是对象名短还好，很长呢？搞得代码中到处都是这个对象名。”</p> <p><strong>改进</strong>：</p> <div class="language- extra-class"><pre class="language-text"><code>const {a,b,c,d,e} = obj;
+const f = a + d;
+const g = c + e;
+
+</code></pre></div><p><strong>反驳</strong></p> <p>不是不用ES6的解构赋值，而是服务端返回的数据对象中的属性名不是我想要的，这样取值，不是还得重新创建个遍历赋值。</p> <p><strong>吐槽</strong></p> <p>看来你对ES6的解构赋值掌握的还是不够彻底。如果想创建的变量名和对象的属性名不一致，可以这么写：</p> <div class="language- extra-class"><pre class="language-text"><code>const {a:a1} = obj;
+console.log(a1);// 1
+
+</code></pre></div><p><strong>补充</strong></p> <p>ES6的解构赋值虽然好用。但是要注意解构的对象不能为<code>undefined</code>、<code>null</code>。否则会报错，故要给被解构的对象一个默认值。</p> <div class="language- extra-class"><pre class="language-text"><code>const {a,b,c,d,e} = obj || {};
+
+</code></pre></div><h2 id="二、关于合并数据的吐槽"><a href="#二、关于合并数据的吐槽" class="header-anchor">#</a> 二、关于合并数据的吐槽</h2> <p>比如合并两个数组，合并两个对象。</p> <div class="language- extra-class"><pre class="language-text"><code>const a = [1,2,3];
+const b = [1,5,6];
+const c = a.concat(b);//[1,2,3,1,5,6]
+
+const obj1 = {
+  a:1,
+}
+const obj1 = {
+  b:1,
+}
+const obj = Object.assign({}, obj1, obj2);//{a:1,b:1}
+
+</code></pre></div><p><strong>吐槽</strong></p> <p>ES6的扩展运算符是不是忘记了，还有数组的合并不考虑去重吗？</p> <p><strong>改进</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const a = [1,2,3];
+const b = [1,5,6];
+const c = [...new Set([...a,...b])];//[1,2,3,5,6]
+
+const obj1 = {
+  a:1,
+}
+const obj2 = {
+  b:1,
+}
+const obj = {...obj1,...obj2};//{a:1,b:1}
+
+</code></pre></div><h2 id="三、关于拼接字符串的吐槽"><a href="#三、关于拼接字符串的吐槽" class="header-anchor">#</a> 三、关于拼接字符串的吐槽</h2> <div class="language- extra-class"><pre class="language-text"><code>const name = '小明';
+const score = 59;
+let result = '';
+if(score &gt; 60){
+  result = `${name}的考试成绩及格`; 
+}else{
+  result = `${name}的考试成绩不及格`; 
+}
+
+</code></pre></div><p><strong>吐槽</strong></p> <p>像你们这样用ES6字符串模板，还不如不用，你们根本不清楚在<code>${}</code>中可以做什么操作。在<code>${}</code>中可以放入任意的JavaScript表达式，可以进行运算，以及引用对象属性。</p> <p><strong>改进</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const name = '小明';
+const score = 59;
+const result = `${name}${score &gt; 60?'的考试成绩及格':'的考试成绩不及格'}`;
+
+</code></pre></div><h2 id="四、关于if中判断条件的吐槽"><a href="#四、关于if中判断条件的吐槽" class="header-anchor">#</a> 四、关于if中判断条件的吐槽</h2> <div class="language- extra-class"><pre class="language-text"><code>if(
+    type == 1 ||
+    type == 2 ||
+    type == 3 ||
+    type == 4 ||
+){
+   //...
+}
+
+</code></pre></div><p><strong>吐槽</strong></p> <p>ES6中数组实例方法<code>includes</code>会不会使用呢？</p> <p><strong>改进</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const condition = [1,2,3,4];
+
+if( condition.includes(type) ){
+   //...
+}
+
+</code></pre></div><h2 id="五、关于列表搜索的吐槽"><a href="#五、关于列表搜索的吐槽" class="header-anchor">#</a> 五、关于列表搜索的吐槽</h2> <p>在项目中，一些没分页的列表的搜索功能由前端来实现，搜索一般分为精确搜索和模糊搜索。搜索也要叫过滤，一般用<code>filter</code>来实现。</p> <div class="language- extra-class"><pre class="language-text"><code>const a = [1,2,3,4,5];
+const result = a.filter( 
+  item =&gt;{
+    return item === 3
+  }
+)
+
+</code></pre></div><p><strong>吐槽</strong></p> <p>如果是精确搜索不会用ES6中的<code>find</code>吗？性能优化懂么，<code>find</code>方法中找到符合条件的项，就不会继续遍历数组。</p> <p><strong>改进</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const a = [1,2,3,4,5];
+const result = a.find( 
+  item =&gt;{
+    return item === 3
+  }
+)
+
+</code></pre></div><h2 id="六、关于扁平化数组的吐槽"><a href="#六、关于扁平化数组的吐槽" class="header-anchor">#</a> 六、关于扁平化数组的吐槽</h2> <p>一个部门JSON数据中，属性名是部门id，属性值是个部门成员id数组集合，现在要把有部门的成员id都提取到一个数组集合中。</p> <div class="language- extra-class"><pre class="language-text"><code>const deps = {
+'采购部':[1,2,3],
+'人事部':[5,8,12],
+'行政部':[5,14,79],
+'运输部':[3,64,105],
+}
+let member = [];
+for (let item in deps){
+    const value = deps[item];
+    if(Array.isArray(value)){
+        member = [...member,...value]
+    }
+}
+member = [...new Set(member)]
+
+</code></pre></div><p><strong>吐槽</strong></p> <p>获取对象的全部属性值还要遍历吗？<code>Object.values</code>忘记了吗？还有涉及到数组的扁平化处理，为啥不用ES6提供的<code>flat</code>方法呢，还好这次的数组的深度最多只到2维，还要是遇到4维、5维深度的数组，是不是得循环嵌套循环来扁平化？</p> <p><strong>改进</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const deps = {
+    '采购部':[1,2,3],
+    '人事部':[5,8,12],
+    '行政部':[5,14,79],
+    '运输部':[3,64,105],
+}
+let member = Object.values(deps).flat(Infinity);
+
+</code></pre></div><p>其中使用<code>Infinity</code>作为<code>flat</code>的参数，使得无需知道被扁平化的数组的维度。</p> <p><strong>补充</strong></p> <p><code>flat</code>方法不支持IE浏览器。</p> <h2 id="七、关于获取对象属性值的吐槽"><a href="#七、关于获取对象属性值的吐槽" class="header-anchor">#</a> 七、关于获取对象属性值的吐槽</h2> <div class="language- extra-class"><pre class="language-text"><code>const name = obj &amp;&amp; obj.name;
+
+</code></pre></div><p><strong>吐槽</strong></p> <p>ES6中的可选链操作符会使用么？</p> <p><strong>改进</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const name = obj?.name;
+
+</code></pre></div><h2 id="八、关于添加对象属性的吐槽"><a href="#八、关于添加对象属性的吐槽" class="header-anchor">#</a> 八、关于添加对象属性的吐槽</h2> <p>当给对象添加属性时，如果属性名是动态变化的，该怎么处理。</p> <div class="language- extra-class"><pre class="language-text"><code>let obj = {};
+let index = 1;
+let key = `topic${index}`;
+obj[key] = '话题内容';
+
+</code></pre></div><p><strong>吐槽</strong></p> <p>为何要额外创建一个变量。不知道ES6中的对象属性名是可以用表达式吗？</p> <p><strong>改进</strong></p> <div class="language- extra-class"><pre class="language-text"><code>let obj = {};
+let index = 1;
+obj[`topic${index}`] = '话题内容';
+
+</code></pre></div><h2 id="九、关于输入框非空的判断"><a href="#九、关于输入框非空的判断" class="header-anchor">#</a> 九、关于输入框非空的判断</h2> <p>在处理输入框相关业务时，往往会判断输入框未输入值的场景。</p> <div class="language- extra-class"><pre class="language-text"><code>if(value !== null &amp;&amp; value !== undefined &amp;&amp; value !== ''){
+    //...
+}
+
+</code></pre></div><p><strong>吐槽</strong></p> <p>ES6中新出的空值合并运算符了解过吗，要写那么多条件吗？</p> <div class="language- extra-class"><pre class="language-text"><code>if(value??'' !== ''){
+  //...
+}
+
+</code></pre></div><h2 id="十、关于异步函数的吐槽"><a href="#十、关于异步函数的吐槽" class="header-anchor">#</a> 十、关于异步函数的吐槽</h2> <p>异步函数很常见，经常是用 Promise 来实现。</p> <div class="language- extra-class"><pre class="language-text"><code>const fn1 = () =&gt;{
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      resolve(1);
+    }, 300);
+  });
+}
+const fn2 = () =&gt;{
+  return new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+      resolve(2);
+    }, 600);
+  });
+}
+const fn = () =&gt;{
+   fn1().then(res1 =&gt;{
+      console.log(res1);// 1
+      fn2().then(res2 =&gt;{
+        console.log(res2)
+      })
+   })
+}
+
+</code></pre></div><p><strong>吐槽</strong></p> <p>如果这样调用异步函数，不怕形成地狱回调啊！</p> <p><strong>改进</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const fn = async () =&gt;{
+  const res1 = await fn1();
+  const res2 = await fn2();
+  console.log(res1);// 1
+  console.log(res2);// 2
+}
+
+</code></pre></div><p><strong>补充</strong></p> <p>但是要做并发请求时，还是要用到<code>Promise.all()</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>const fn = () =&gt;{
+   Promise.all([fn1(),fn2()]).then(res =&gt;{
+       console.log(res);// [1,2]
+   }) 
+}
+
+</code></pre></div><p>如果并发请求时，只要其中一个异步函数处理完成，就返回结果，要用到<code>Promise.race()</code>。</p> <blockquote><p>作者：红尘炼心
+https://juejin.cn/post/7016520448204603423</p></blockquote></div></div> <!----> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/05/09, 06:48:29</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/5aae97/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">CSS 实现多行文本“展开收起”</div></a> <a href="/pages/a3ded1/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">ES12令人期待的新特性</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/5aae97/" class="prev">CSS 实现多行文本“展开收起”</a></span> <span class="next"><a href="/pages/a3ded1/">ES12令人期待的新特性</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/20730e/"><div>
+            图解Git
+            <!----></div></a> <span class="date">05-10</span></dt></dl><dl><dd>02</dd> <dt><a href="/about/error/"><div>
+            关于 - 网站错误反馈
+            <!----></div></a> <span class="date">05-10</span></dt></dl><dl><dd>03</dd> <dt><a href="/about/appreciate/"><div>
+            关于 - 赞赏❤️的用途
+            <!----></div></a> <span class="date">05-10</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><a href="https://feyoudao.oss-cn-hongkong.aliyuncs.com/site/public_logo.jpeg" target="_blank"><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="24"> 加入前端有道交流群</a>
+    | Copyright © 2018-2026
+    <span>星野 | <a href="https://github.com/qqlcx5/frontend/blob/master/LICENSE" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <div class="body-bg" style="background:url() center center / cover no-repeat;opacity:0.5;"></div> <!----> <!----></div><div class="global-ui"><!----><div id="tcomment"></div></div></div>
+    <script src="/assets/js/app.f2cb0e36.js" defer></script><script src="/assets/js/4.52ba796c.js" defer></script><script src="/assets/js/2.b40b70ca.js" defer></script><script src="/assets/js/68.65d4da18.js" defer></script><script src="/assets/js/29.b654ba19.js" defer></script>
+  </body>
+</html>

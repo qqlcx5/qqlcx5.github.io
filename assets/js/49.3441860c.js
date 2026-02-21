@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[49],{436:function(t,n,s){"use strict";s.r(n);var e=s(6),i=Object(e.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("div",{staticClass:"center-container"},[t("p",[this._v("欢迎大家留言讨论。 如果加载异常，请重新刷新页面。")])])])}),[],!1,null,null,null);n.default=i.exports}}]);
