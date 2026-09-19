@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>开发百宝箱 | 前端有道</title>
+    <meta name="description" content="前端有道,技术博客,前端,前端开发,前端博客,前端框架,web前端,前端面试,技术文档,学习,面试,JavaScript,js,es6,typeScript,ts,vue,python,css3,html5,node,git,github,markdown,vuepress,react">
+    <meta name="generator" content="VitePress v1.6.4">
+    <link rel="preload stylesheet" href="/assets/style.C5TukBFs.css" as="style">
+    <link rel="preload stylesheet" href="/vp-icons.css" as="style">
+    <script type="module" src="/assets/chunks/metadata.b10b3a60.js"></script>
+    <script type="module" src="/assets/app.DBFi6jng.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/theme.BwpUdIur.js">
+    <link rel="modulepreload" href="/assets/chunks/framework.DvBUyM1S.js">
+    <link rel="modulepreload" href="/assets/nav.md.rbi_rWby.lean.js">
+    <link rel="icon" type="image/x-icon" href="http://r2-site.feyoudao.cn/star_field.ico">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh-CN">
+    <meta property="og:title" content="前端有道">
+    <meta property="og:description" content="前端有道,技术博客,前端,前端开发,前端博客,前端框架,web前端,前端面试,技术文档,学习,面试,JavaScript,js,es6,typeScript,ts,vue,python,css3,html5,node,git,github,markdown,vuepress,react">
+    <meta name="keywords" content="前端有道,技术博客,前端,前端开发,前端博客,前端框架,web前端,前端面试,技术文档,学习,面试,JavaScript,js,es6,typeScript,ts,vue,python,css3,html5,node,git,github,markdown,vuepress,react">
+    <meta name="author" content="星野">
+    <meta name="baidu-site-verification" content="code-T8obz32BBI">
+    <meta name="msvalidate.01" content="c2598f74a60ff811a8155a1092cf4fe0_1652173064">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body><!--teleport start anchor--><div style="display:none;" class="tk-spotlight-hover tk-spotlight-hover__aside" aria-hidden="true" focusable="false"></div><!--teleport anchor-->
+    <div id="app"><!--[--><!--v-if--><!--v-if--><!--v-if--><!--[--><!--v-if--><!----><!--v-if--><div class="tk-right-bottom-button tk-wallpaper-outside flx-column"><!--[--><!--]--><div title="返回顶部" class="tk-right-bottom-button__button back-top" style="--tk-progress:0;display:none;" role="button" aria-label="返回顶部" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><span class="content">0</span></div><div title="前往评论" class="tk-right-bottom-button__button" role="button" aria-label="前往评论" style="display:none;"><i class="tk-icon" style="--icon-color-hover:var(--tk-theme-color);" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+    <path
+      fill="currentColor"
+      d="M273.536 736H800a64 64 0 0 0 64-64V256a64 64 0 0 0-64-64H224a64 64 0 0 0-64 64v570.88zM296 800 147.968 918.4A32 32 0 0 1 96 893.44V256a128 128 0 0 1 128-128h576a128 128 0 0 1 128 128v416a128 128 0 0 1-128 128z"
+    ></path>
+    <path
+      fill="currentColor"
+      d="M512 499.2a51.2 51.2 0 1 1 0-102.4 51.2 51.2 0 0 1 0 102.4zm192 0a51.2 51.2 0 1 1 0-102.4 51.2 51.2 0 0 1 0 102.4zm-384 0a51.2 51.2 0 1 1 0-102.4 51.2 51.2 0 0 1 0 102.4z"
+    ></path>
+  </svg></i></div><!--v-if--><!--[--><!--]--></div><!--]--><div class="Layout tk-layout" data-v-16aeeb2b><!--[--><!--]--><!--[--><span tabindex="-1" data-v-56e108a5></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-56e108a5>Skip to content</a><!--]--><!----><header class="VPNav" data-v-16aeeb2b data-v-3f24952f><div class="VPNavBar" data-v-3f24952f data-v-e6d67abb><div class="wrapper" data-v-e6d67abb><div class="container" data-v-e6d67abb><div class="title" data-v-e6d67abb><div class="VPNavBarTitle" data-v-e6d67abb data-v-1dc2e2af><a class="title" href="/" data-v-1dc2e2af><!--[--><!--]--><!--[--><img class="VPImage logo" src="http://r2-site.feyoudao.cn/star_field.ico" alt data-v-1645c222><!--]--><span data-v-1dc2e2af>前端有道</span><!--[--><!--]--></a></div></div><div class="content" data-v-e6d67abb><div class="content-body" data-v-e6d67abb><!--[--><!--]--><div class="VPNavBarSearch search" data-v-e6d67abb><!--[--><!----><div id="local-search"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><span class="vp-icon DocSearch-Search-Icon"></span><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"><kbd class="DocSearch-Button-Key"></kbd><kbd class="DocSearch-Button-Key">K</kbd></span></button></div><!--]--></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-e6d67abb data-v-130abfc8><span id="main-nav-aria-label" class="visually-hidden" data-v-130abfc8> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/" tabindex="0" data-v-130abfc8 data-v-4594033e><!--[--><span data-v-4594033e>首页</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink active" href="/nav.html" tabindex="0" data-v-130abfc8 data-v-4594033e><!--[--><span data-v-4594033e>导航</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/algorithm.html" tabindex="0" data-v-130abfc8 data-v-4594033e><!--[--><span data-v-4594033e>算法</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/web.html" tabindex="0" data-v-130abfc8 data-v-4594033e><!--[--><span data-v-4594033e>开发</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/tools.html" tabindex="0" data-v-130abfc8 data-v-4594033e><!--[--><span data-v-4594033e>工具</span><!--]--></a><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-130abfc8 data-v-f8193614><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-f8193614><span class="text" data-v-f8193614><!----><span data-v-f8193614>收藏夹</span><span class="vpi-chevron-down text-icon" data-v-f8193614></span></span></button><div class="menu" data-v-f8193614><div class="VPMenu" data-v-f8193614 data-v-f71c3ce7><div class="items" data-v-f71c3ce7><!--[--><!--[--><div class="VPMenuLink" data-v-f71c3ce7 data-v-82fa2b8e><a class="VPLink link vp-external-link-icon" href="https://feyoudao.cn/coder-bookmarks/" target="_blank" rel="noreferrer" data-v-82fa2b8e><!--[--><span data-v-82fa2b8e>收藏夹</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-f71c3ce7 data-v-82fa2b8e><a class="VPLink link vp-external-link-icon" href="https://feyoudao.cn/nutils-js-site/" target="_blank" rel="noreferrer" data-v-82fa2b8e><!--[--><span data-v-82fa2b8e>工具库</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-f71c3ce7 data-v-82fa2b8e><a class="VPLink link vp-external-link-icon" href="https://feyoudao.cn/vuepress-next/" target="_blank" rel="noreferrer" data-v-82fa2b8e><!--[--><span data-v-82fa2b8e>VuePress 2.0</span><!--]--></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/entertainment.html" tabindex="0" data-v-130abfc8 data-v-4594033e><!--[--><span data-v-4594033e>休闲娱乐</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/message-area.html" tabindex="0" data-v-130abfc8 data-v-4594033e><!--[--><span data-v-4594033e>留言区</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/about/me.html" tabindex="0" data-v-130abfc8 data-v-4594033e><!--[--><span data-v-4594033e>关于</span><!--]--></a><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-130abfc8 data-v-f8193614><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-f8193614><span class="text" data-v-f8193614><!----><span data-v-f8193614>索引</span><span class="vpi-chevron-down text-icon" data-v-f8193614></span></span></button><div class="menu" data-v-f8193614><div class="VPMenu" data-v-f8193614 data-v-f71c3ce7><div class="items" data-v-f71c3ce7><!--[--><!--[--><div class="VPMenuLink" data-v-f71c3ce7 data-v-82fa2b8e><a class="VPLink link" href="/archives.html" data-v-82fa2b8e><!--[--><span data-v-82fa2b8e>归档</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-f71c3ce7 data-v-82fa2b8e><a class="VPLink link" href="/categories.html" data-v-82fa2b8e><!--[--><span data-v-82fa2b8e>分类</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-f71c3ce7 data-v-82fa2b8e><a class="VPLink link" href="/tags.html" data-v-82fa2b8e><!--[--><span data-v-82fa2b8e>标签</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-f71c3ce7 data-v-82fa2b8e><a class="VPLink link" href="/articleOverview.html" data-v-82fa2b8e><!--[--><span data-v-82fa2b8e>文章清单</span><!--]--></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-e6d67abb data-v-83f08642><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-83f08642 data-v-b76fd6fd data-v-d986fe85><span class="check" data-v-d986fe85><span class="icon" data-v-d986fe85><!--[--><span class="vpi-sun sun" data-v-b76fd6fd></span><span class="vpi-moon moon" data-v-b76fd6fd></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-e6d67abb data-v-6436a9a6 data-v-60598df8><!--[--><a class="VPSocialLink no-icon" href="https://github.com/qqlcx5" aria-label="github" target="_blank" rel="noopener" data-v-60598df8 data-v-688ef4d8><span class="vpi-social-github"></span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-e6d67abb data-v-00ad5ea3 data-v-f8193614><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-f8193614><span class="vpi-more-horizontal icon" data-v-f8193614></span></button><div class="menu" data-v-f8193614><div class="VPMenu" data-v-f8193614 data-v-f71c3ce7><!----><!--[--><!--[--><!----><div class="group" data-v-00ad5ea3><div class="item appearance" data-v-00ad5ea3><p class="label" data-v-00ad5ea3>主题</p><div class="appearance-action" data-v-00ad5ea3><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-00ad5ea3 data-v-b76fd6fd data-v-d986fe85><span class="check" data-v-d986fe85><span class="icon" data-v-d986fe85><!--[--><span class="vpi-sun sun" data-v-b76fd6fd></span><span class="vpi-moon moon" data-v-b76fd6fd></span><!--]--></span></span></button></div></div></div><div class="group" data-v-00ad5ea3><div class="item social-links" data-v-00ad5ea3><div class="VPSocialLinks social-links-list" data-v-00ad5ea3 data-v-60598df8><!--[--><a class="VPSocialLink no-icon" href="https://github.com/qqlcx5" aria-label="github" target="_blank" rel="noopener" data-v-60598df8 data-v-688ef4d8><span class="vpi-social-github"></span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--[--><!--[--><!--[--><!--]--><!--[--><!--[--><div class="tk-theme-enhance flx-align-center"><!--[--><i class="tk-icon" style="--icon-size:20px;--icon-color-hover:var(--tk-theme-color);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+    <path
+      fill="currentColor"
+      d="m512 863.36 384-54.848v-638.72L525.568 222.72a96 96 0 0 1-27.136 0L128 169.792v638.72zM137.024 106.432l370.432 52.928a32 32 0 0 0 9.088 0l370.432-52.928A64 64 0 0 1 960 169.792v638.72a64 64 0 0 1-54.976 63.36l-388.48 55.488a32 32 0 0 1-9.088 0l-388.48-55.488A64 64 0 0 1 64 808.512v-638.72a64 64 0 0 1 73.024-63.36z"
+    ></path>
+    <path fill="currentColor" d="M480 192h64v704h-64z"></path>
+  </svg></i><!--]--></div><!--teleport start--><!--teleport end--><!--]--><!--v-if--><!--]--><!--]--><!--]--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-e6d67abb data-v-c964922b><span class="container" data-v-c964922b><span class="top" data-v-c964922b></span><span class="middle" data-v-c964922b></span><span class="bottom" data-v-c964922b></span></span></button></div></div></div></div><div class="divider" data-v-e6d67abb><div class="divider-line" data-v-e6d67abb></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-16aeeb2b data-v-e2bde48c><div class="container" data-v-e2bde48c><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-e2bde48c data-v-a536b095><button data-v-a536b095>返回顶部</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-16aeeb2b data-v-d6d2d48a><div class="VPDoc has-aside" data-v-d6d2d48a data-v-8940c470><!--[--><!--]--><div class="container" data-v-8940c470><div class="aside" data-v-8940c470><div class="aside-curtain" data-v-8940c470></div><div class="aside-container" data-v-8940c470><div class="aside-content" data-v-8940c470><div class="VPDocAside" data-v-8940c470 data-v-f63defeb><!--[--><!--]--><!--[--><!--[--><!--[--><!--[--><!--[--><!--[--><!--]--><div class="tk-article-share"><button class="tk-article-share__button flx-center" aria-label="分享此页面" aria-live="polite"><div class="flx-center"><i class="tk-icon" style="margin-right:4px;--icon-color-hover:var(--tk-theme-color);"><svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    aria-hidden="true"
+    role="img"
+    class="iconify iconify iconify--solar"
+    alt="Icon"
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+    style="vertical-align: -0.125em"
+  >
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      d="M13.803 5.333c0-1.84 1.5-3.333 3.348-3.333A3.34 3.34 0 0 1 20.5 5.333c0 1.841-1.5 3.334-3.349 3.334a3.35 3.35 0 0 1-2.384-.994l-4.635 3.156a3.34 3.34 0 0 1-.182 1.917l5.082 3.34a3.35 3.35 0 0 1 2.12-.753a3.34 3.34 0 0 1 3.348 3.334C20.5 20.507 19 22 17.151 22a3.34 3.34 0 0 1-3.348-3.333a3.3 3.3 0 0 1 .289-1.356L9.05 14a3.35 3.35 0 0 1-2.202.821A3.34 3.34 0 0 1 3.5 11.487a3.34 3.34 0 0 1 3.348-3.333c1.064 0 2.01.493 2.623 1.261l4.493-3.059a3.3 3.3 0 0 1-.161-1.023"
+      clip-rule="evenodd"
+    ></path>
+  </svg></i> 分享此页面</div></button></div><!--[--><!--]--><!--]--><!--[--><!--]--><!--]--><!--]--><!--]--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-f63defeb data-v-94615181><div class="content" data-v-94615181><div class="outline-marker" data-v-94615181></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-94615181>本页导航</div><ul class="VPDocOutlineItem root" data-v-94615181 data-v-7a5130ab><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-f63defeb></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-8940c470><div class="content-container" data-v-8940c470><!--[--><!--[--><!--[--><!--[--><!--]--><!--v-if--><!----><!----><!----><!--v-if--><!--v-if--><!--]--><!--]--><!--]--><main class="main" data-v-8940c470><div style="position:relative;" class="vp-doc _nav" data-v-8940c470><div><h1 id="开发百宝箱" tabindex="-1">开发百宝箱 <a class="header-anchor" href="#开发百宝箱" aria-label="Permalink to &quot;开发百宝箱&quot;">​</a></h1><h2 id="友情链接" tabindex="-1">友情链接 <a class="header-anchor" href="#友情链接" aria-label="Permalink to &quot;友情链接&quot;">​</a></h2><p>::: cardList 3</p><div class="language-yaml vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">yaml</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">George Chan</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  desc</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">让我给你讲讲他的传奇故事吧</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  avatar</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://z3.ax1x.com/2021/09/30/4oKMVI.jpg</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  link</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://cyc0819.top/</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  bgColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#FFB6C1&#39;</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  textColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#621529&#39;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  </span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  </span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">butcher2000</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  desc</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">即使再小的帆，也能远航</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  avatar</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/user/20211029181901.png</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  link</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://blog.csdn.net/weixin_46827107</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  bgColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#CBEAFA&#39;</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  textColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#6854A1&#39;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  </span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Evan&#39;s blog</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  desc</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">前端的小学生</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  avatar</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  link</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://xugaoyi.com/</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  bgColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#B9D59C&#39;</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  textColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#3B551F&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">二丫讲梵</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  desc</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">💻学习📝记录🔗分享</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  avatar</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://wiki.eryajf.net/img/logo.png</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  link</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://wiki.eryajf.net/</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  bgColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#FBEBEC&#39;</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  textColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#603420&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Weibw</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  desc</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">一个没有梦想的咸鱼</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  avatar</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://cdn.jsdelivr.net/gh/Weibw162/image-hosting@dev/%E6%9D%82%E5%BD%95/image.735febsv1zo0.webp</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  link</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">http://weibw162.com/</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  bgColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#FFCEDE&#39;</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  textColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#621529&#39;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  </span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Java 全栈知识体系</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  desc</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Java 全栈知识体系</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  avatar</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://www.pdai.tech/_images/index-read.gif</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  link</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://www.pdai.tech/</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  bgColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#FCDBA0&#39;</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  textColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#A05F2C&#39;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  </span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">风祈的时光录</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  desc</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">主要是Java技术栈的博客，比较偏原理，源码类型的博主</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  avatar</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://npm.elemecdn.com/lql_static@latest/avatar/1.jpg</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  link</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://imlql.cn/</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  bgColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#FFEFE2&#39;</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  textColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#A05F2C&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">xustudyxu</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  desc</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">一起学习编程!</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  avatar</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://cdn.jsdelivr.net/gh/xustudyxu/image-hosting@master/20220423/01.3d9wrma6qlq0.webp</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  link</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">https://frxcat.fun/</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  bgColor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;#CBEAFA&#39;</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br></div></div><p>:::</p><h2 id="搜索引擎" tabindex="-1">搜索引擎 <a class="header-anchor" href="#搜索引擎" aria-label="Permalink to &quot;搜索引擎&quot;">​</a></h2><!----><h2 id="代码托管" tabindex="-1">代码托管 <a class="header-anchor" href="#代码托管" aria-label="Permalink to &quot;代码托管&quot;">​</a></h2><!----><h2 id="前端开发" tabindex="-1">前端开发 <a class="header-anchor" href="#前端开发" aria-label="Permalink to &quot;前端开发&quot;">​</a></h2><!----><!----><!----><!----><!----><h2 id="后端开发" tabindex="-1">后端开发 <a class="header-anchor" href="#后端开发" aria-label="Permalink to &quot;后端开发&quot;">​</a></h2><!----><h2 id="文档工具" tabindex="-1">文档工具 <a class="header-anchor" href="#文档工具" aria-label="Permalink to &quot;文档工具&quot;">​</a></h2><!----><h2 id="热门社区" tabindex="-1">热门社区 <a class="header-anchor" href="#热门社区" aria-label="Permalink to &quot;热门社区&quot;">​</a></h2><!----><h2 id="工具合集" tabindex="-1">工具合集 <a class="header-anchor" href="#工具合集" aria-label="Permalink to &quot;工具合集&quot;">​</a></h2><!----><h2 id="文档教程" tabindex="-1">文档教程 <a class="header-anchor" href="#文档教程" aria-label="Permalink to &quot;文档教程&quot;">​</a></h2><!----><h2 id="动态图表" tabindex="-1">动态图表 <a class="header-anchor" href="#动态图表" aria-label="Permalink to &quot;动态图表&quot;">​</a></h2><!----><h2 id="图片图标" tabindex="-1">图片图标 <a class="header-anchor" href="#图片图标" aria-label="Permalink to &quot;图片图标&quot;">​</a></h2><!----><h2 id="css样式" tabindex="-1">CSS样式 <a class="header-anchor" href="#css样式" aria-label="Permalink to &quot;CSS样式&quot;">​</a></h2><!----><h2 id="网站分析" tabindex="-1">网站分析 <a class="header-anchor" href="#网站分析" aria-label="Permalink to &quot;网站分析&quot;">​</a></h2><!----><h2 id="其它资源" tabindex="-1">其它资源 <a class="header-anchor" href="#其它资源" aria-label="Permalink to &quot;其它资源&quot;">​</a></h2><!----><h2 id="参考来源" tabindex="-1">参考来源 <a class="header-anchor" href="#参考来源" aria-label="Permalink to &quot;参考来源&quot;">​</a></h2><p><code>https://www.pdai.tech/md/resource/tools.html</code></p><script>
+export default {
+    data() {
+    return {
+      // 搜索引擎
+      cardData0: [
+        {
+          id: &#39;0&#39;,
+          cardSrc: &quot;http://www.baidu.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104224044.png&quot;,
+          cardName: &quot;百度&quot;,
+          cardContent:
+            &quot;百度——全球最大的中文搜索引擎及最大的中文网站，全球领先的人工智能公司&quot;,
+        },
+        {
+          cardSrc: &quot;http://www.google.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104225539.png&quot;,
+          cardName: &quot;Google&quot;,
+          cardContent:
+            &quot;全球最大的搜索引擎公司&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.bing.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104224430.png&quot;,
+          cardName: &quot;Bing&quot;,
+          cardContent:
+            &quot;微软公司推出的用以取代Live Search的搜索引擎&quot;,
+        },
+      ],
+      // 代码托管
+      cardData1: [
+        {
+          id: &#39;1&#39;,
+          cardSrc: &quot;https://github.com/&quot;,
+          cardImgSrc: &quot;https://img0.baidu.com/it/u=2382900870,3325593570&amp;fm=26&amp;fmt=auto&quot;,
+          cardName: &quot;Github&quot;,
+          cardContent:
+            &quot;GitHub是一个面向开源及私有软件项目的托管平台&quot;,
+        },
+        {
+          cardSrc: &quot;https://gitee.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104231432.png&quot;,
+          cardName: &quot;Gitee&quot;,
+          cardContent:
+            &quot;开源中国旗下的代码托管平台：码云&quot;,
+        },
+        {
+          cardSrc: &quot;https://vercel.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105210701.png&quot;,
+          cardName: &quot;Vercel&quot;,
+          cardContent:
+            &quot;Vercel 是前端框架和静态站点的平台，旨在与您的无头内容、商业或数据库集成&quot;,
+        },
+        {
+          cardSrc: &quot;https://coding.net/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104231517.png&quot;,
+          cardName: &quot;Coding&quot;,
+          cardContent:
+            &quot;一站式 DevOps，提升研发效能&quot;,
+        },
+      ],
+      // 热门社区
+      cardData2: [
+        {
+          id: &#39;2&#39;,
+          cardSrc: &quot;http://www.csdn.net/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104232713.png&quot;,
+          cardName: &quot;CDSN&quot;,
+          cardContent:
+            &quot;中国专业IT社区CSDN&quot;,
+        },
+        {
+          cardSrc: &quot;http://www.cnblogs.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104232039.png&quot;,
+          cardName: &quot;博客园&quot;,
+          cardContent:
+            &quot;开发者的网上家园&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.oschina.net/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104232755.png&quot;,
+          cardName: &quot;OSChina&quot;,
+          cardContent:
+            &quot;中国最大的开源技术社区&quot;,
+        },
+        {
+          cardSrc: &quot;https://segmentfault.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105210328.png&quot;,
+          cardName: &quot;饭否&quot;,
+          cardContent:
+            &quot;中国领先的开发者技术社区&quot;,
+        },
+        {
+          cardSrc: &quot;https://juejin.im/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104233516.svg&quot;,
+          cardName: &quot;掘金&quot;,
+          cardContent:
+            &quot;掘金是一个帮助开发者成长的社区，是一个面向互联网技术人的内容分享平台&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.linuxidc.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104233249.png&quot;,
+          cardName: &quot;Linux公社&quot;,
+          cardContent:
+            &quot;Linux系统门户网站&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.ibm.com/developerworks/cn/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104233311.png&quot;,
+          cardName: &quot;IBM 开发者&quot;,
+          cardContent:
+            &quot;IBM开发者社区&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.jianshu.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220111001422.png&quot;,
+          cardName: &quot;简书&quot;,
+          cardContent:
+            &quot;简书是一个优质的创作社区,在这里,你可以任性地创作,一篇短文、一张照片、一首诗、一幅画……我们相信,每个人都是生活中的艺术家,有着无穷的创造力&quot;,
+        },
+        {
+          cardSrc: &quot;https://stackoverflow.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220111001325.png&quot;,
+          cardName: &quot;stack overflow&quot;,
+          cardContent:
+            &quot;Stack Overflow是最大、最值得信赖的在线社区，供开发人员学习、分享编程知识和建立职业生涯&quot;,
+        },
+        {
+          cardSrc: &quot;https://maliquankai.com/designnav/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220111001711.png&quot;,
+          cardName: &quot;码力全开资源库&quot;,
+          cardContent:
+            &quot;很全很强大，独立开发者/设计干货/优质利器/工具资源&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.infoq.cn/topic/Front-end&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220111001811.png&quot;,
+          cardName: &quot;InfoQ&quot;,
+          cardContent:
+            &quot;在新陈代谢旺盛的前端领域，帮助开发者把握前端未来的方向，关注科技企业的前端实践，在这里看到前端的远端&quot;,
+        },
+      ],
+      // 工具合集
+      cardData3: [
+        {
+          id: &#39;3&#39;,
+          cardSrc: &quot;https://c.runoob.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104234003.png&quot;,
+          cardName: &quot;菜鸟工具&quot;,
+          cardContent:
+            &quot;菜鸟教程提供的工具集&quot;,
+        },
+        {
+          cardSrc: &quot;https://tool.oschina.net/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104232755.png&quot;,
+          cardName: &quot;工具&quot;,
+          cardContent:
+            &quot;开源中国在线工具&quot;,
+        },
+        {
+          cardSrc: &quot;https://tool.lu//&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104234610.png&quot;,
+          cardName: &quot;Tool工具箱&quot;,
+          cardContent:
+            &quot;程序员的工具箱&quot;,
+        },
+        {
+          cardSrc: &quot;http://tools.jb51.net/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104234502.png&quot;,
+          cardName: &quot;脚本之家&quot;,
+          cardContent:
+            &quot;脚本之家旗下的工具箱&quot;,
+        },
+        {
+          cardSrc: &quot;https://123.w3cschool.cn/webtools/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104234731.png&quot;,
+          cardName: &quot;W3Cschool&quot;,
+          cardContent:
+            &quot;W3Cschool旗下的工具箱&quot;,
+        },
+        {
+          cardSrc: &quot;https://gitee.com/explore/all/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104231432.png&quot;,
+          cardName: &quot;Gitee开源&quot;,
+          cardContent:
+            &quot;Gitee 开源项目推荐列表&quot;,
+        },
+        {
+          cardSrc: &quot;https://cloudconvert.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104234641.png&quot;,
+          cardName: &quot;云转换&quot;,
+          cardContent:
+            &quot;在线转化压缩包、字体、图片、视频、电子书&quot;,
+        },
+      ],
+      // 文档教程
+      cardData4: [
+        {
+          id: &#39;4&#39;,
+          cardSrc: &quot;https://www.runoob.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104234903.png&quot;,
+          cardName: &quot;菜鸟教程&quot;,
+          cardContent:
+            &quot;菜鸟教程集合&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.w3cschool.cn/tutorial/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104234912.png&quot;,
+          cardName: &quot;w3cschool&quot;,
+          cardContent:
+            &quot;w3cschool主要为初学者技术的人员提供在线学习教程和日常技术资料查询服务&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.w3school.com.cn/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104234958.png&quot;,
+          cardName: &quot;w3cschool&quot;,
+          cardContent:
+            &quot;W3School 是因特网上最大的 WEB 开发者资源，其中包括全面的教程、完善的参考手册以及庞大的代码库&quot;,
+        },
+        {
+          cardSrc: &quot;https://developer.mozilla.org/zh-CN/docs/Learn/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104235346.png&quot;,
+          cardName: &quot;MDN&quot;,
+          cardContent:
+            &quot;源于开发者，服务开发者&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.javatpoint.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104235316.png&quot;,
+          cardName: &quot;JavaPoint&quot;,
+          cardContent:
+            &quot;The Best Portal to Learn Technologies&quot;,
+        },
+      ],
+      // 文档工具
+      cardData5: [
+        {
+          id: &#39;5&#39;,
+          cardSrc: &quot;https://vuepress.vuejs.org/zh/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105000146.png&quot;,
+          cardName: &quot;VuePress&quot;,
+          cardContent:
+            &quot;Vue 驱动的静态网站生成器，本项目就是使用VuePress开发的&quot;,
+        },
+        {
+          cardSrc: &quot;https://doc.xugaoyi.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200409124835.png&quot;,
+          cardName: &quot;vuepress-theme-vdoing&quot;,
+          cardContent:
+            &quot;🚀一款简洁高效的 VuePress 知识管理&amp;博客 主题&quot;,
+        },
+        {
+          cardSrc: &quot;https://hexo.io/zh-cn/&quot;,
+          cardImgSrc: &quot;https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg&quot;,
+          cardName: &quot;Hexo&quot;,
+          cardContent:
+            &quot;快速、简洁且高效的博客框架&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.yuque.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105213419.png&quot;,
+          cardName: &quot;语雀&quot;,
+          cardContent:
+            &quot;新一代云端知识库，个人笔记与知识创作，团队协同与知识沉淀&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.gitbook.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105000040.png&quot;,
+          cardName: &quot;Gitbook&quot;,
+          cardContent:
+            &quot;一个先进可定制的文档格式工具&quot;,
+        },
+        {
+          cardSrc: &quot;https://docsify.js.org/#/zh-cn/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105000115.png&quot;,
+          cardName: &quot;Docsify&quot;,
+          cardContent:
+            &quot;一个神奇的文档网站生成工具&quot;,
+        },
+      ],
+      // 后端开发
+      cardData6: [
+        {
+          id: &#39;6&#39;,
+          cardSrc: &quot;https://spring.io/projects/spring-boot/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105000450.png&quot;,
+          cardName: &quot;Spring&quot;,
+          cardContent:
+            &quot;Spring框架是一个开放源代码的J2EE应用程序框架&quot;,
+        },
+        {
+          cardSrc: &quot;https://mybatis.org/mybatis-3/zh/index.html&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105000812.png&quot;,
+          cardName: &quot;MyBatis&quot;,
+          cardContent:
+            &quot;MyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过程以及高级映射&quot;,
+        },
+        {
+          cardSrc: &quot;https://mybatis.plus/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105000613.png&quot;,
+          cardName: &quot;MyBatis Plus&quot;,
+          cardContent:
+            &quot;MyBatis 的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生&quot;,
+        },
+        {
+          cardSrc: &quot;https://mvnrepository.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105000653.png&quot;,
+          cardName: &quot;Maven&quot;,
+          cardContent:
+            &quot;Maven 仓库检索，非常常用&quot;,
+        },
+        {
+          cardSrc: &quot;https://docs.gradle.org/current/userguide/userguide.html&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105000729.png&quot;,
+          cardName: &quot;Gradle&quot;,
+          cardContent:
+            &quot;基于Apache Ant和Apache Maven概念的项目自动化构建开源工具&quot;,
+        },
+      ],
+      // 前端开发
+      // Vue UI
+      cardData7_1: [
+        {
+          id: &#39;7_1&#39;,
+          title: &#39;Vue &amp; UI&#39;,
+          cardSrc: &quot;https://cn.vuejs.org/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105001047.png&quot;,
+          cardName: &quot;Vue&quot;,
+          cardContent:
+            &quot;渐进式 JavaScript 框架&quot;,
+        },
+        {
+          cardSrc: &quot;https://element.eleme.cn/#/zh-CN/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105001602.png&quot;,
+          cardName: &quot;Element-UI&quot;,
+          cardContent:
+            &quot;Element，一套为开发者、设计师和产品经理准备的基于 Vue 的桌面端组件库&quot;,
+        },
+        {
+          cardSrc: &quot;https://next.antdv.com/docs/vue/introduce-cn/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105223748.svg&quot;,
+          cardName: &quot;Ant Design Vue&quot;,
+          cardContent:
+            &quot;Vue UI 之 Ant Design Vue，蚂蚁金服的 Vue 框架&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.iviewui.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105001656.png&quot;,
+          cardName: &quot;View UI&quot;,
+          cardContent:
+            &quot;View UI 是一套基于 Vue.js 的高质量UI 组件库&quot;,
+        },
+        {
+          cardSrc: &quot;https://youzan.github.io/vant/#/zh-CN/&quot;,
+          cardImgSrc: &quot;https://img01.yzcdn.cn/vant/logo.png&quot;,
+          cardName: &quot;Vant&quot;,
+          cardContent:
+            &quot;轻量、可靠的移动端 Vue 组件库&quot;,
+        },
+      ],
+      // React UI
+      cardData7_2: [
+        {
+          id: &#39;7_2&#39;,
+          title: &#39;React &amp; UI&#39;,
+          cardSrc: &quot;https://react.docschina.org/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105001206.png&quot;,
+          cardName: &quot;React&quot;,
+          cardContent:
+            &quot;用于构建用户界面的 JavaScript 库&quot;,
+        },
+        {
+          cardSrc: &quot;https://ant.design/index-cn&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105223748.svg&quot;,
+          cardName: &quot;Ant Design&quot;,
+          cardContent:
+            &quot;React 开箱即用的中台前端/设计解决方案&quot;,
+        },
+        {
+          cardSrc: &quot;https://react-bootstrap.github.io/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105224229.png&quot;,
+          cardName: &quot;Ant Design Vue&quot;,
+          cardContent:
+            &quot;最流行的前端框架 bootstrap，为 React 适配&quot;,
+        },
+        {
+          cardSrc: &quot;https://mui.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105224500.png&quot;,
+          cardName: &quot;MATERIAL-UI&quot;,
+          cardContent:
+            &quot;View UI 是一套基于 Vue.js 的高质量UI 组件库&quot;,
+        },
+        {
+          cardSrc: &quot;https://youzan.github.io/vant/#/zh-CN/&quot;,
+          cardImgSrc: &quot;https://img01.yzcdn.cn/vant/logo.png&quot;,
+          cardName: &quot;Vant&quot;,
+          cardContent:
+            &quot;轻量、可靠的移动端 Vue 组件库&quot;,
+        },
+      ],
+      // React UI
+      cardData7_3: [
+        {
+          id: &#39;7_3&#39;,
+          title: &#39;效果组件&#39;,
+          cardSrc: &quot;https://animate.style/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105233408.png&quot;,
+          cardName: &quot;Animate.css&quot;,
+          cardContent:
+            &quot;动画库&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.swiper.com.cn/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105233615.png&quot;,
+          cardName: &quot;Swiper&quot;,
+          cardContent:
+            &quot;轮播组件&quot;,
+        },
+        {
+          cardSrc: &quot;http://www.mescroll.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105233730.png&quot;,
+          cardName: &quot;mescroll&quot;,
+          cardContent:
+            &quot;下拉刷新和上拉加载框架-基于原生JS&quot;,
+        },
+      ],
+      // 工具类
+      cardData7_4: [
+        {
+          id: &#39;7_4&#39;,
+          title: &#39;工具类&#39;,
+          cardSrc: &quot;https://www.lodashjs.com/&quot;,
+          cardImgSrc: &quot;https://www.lodashjs.com/img/lodash.png&quot;,
+          cardName: &quot;Lodash&quot;,
+          cardContent:
+            &quot;Lodash 是一个一致性、模块化、高性能的 JavaScript 实用工具库&quot;,
+        },
+        {
+          cardSrc: &quot;https://dayjs.fenxianglu.cn/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220110235754.png&quot;,
+          cardName: &quot;Day.js&quot;,
+          cardContent:
+            &quot;Day.js是一个极简的JavaScript库，可以为现代浏览器解析、验证、操作和显示日期和时间&quot;,
+        },
+        {
+          cardSrc: &quot;https://github.com/hustcc/timeago.js&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220111000119.png&quot;,
+          cardName: &quot;Timeago.js&quot;,
+          cardContent:
+            &quot;相对时间，如N小时前&quot;,
+        },
+        {
+          cardSrc: &quot;https://echarts.apache.org/zh/index.html&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/zh/images/logo.png?_v_=20200710_1&quot;,
+          cardName: &quot;Apache ECharts&quot;,
+          cardContent:
+            &quot;一个基于 JavaScript 的开源可视化图表库&quot;,
+        },
+        {
+          cardSrc: &quot;https://pandao.github.io/editor.md/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220111000050.png&quot;,
+          cardName: &quot;Meditor.md&quot;,
+          cardContent:
+            &quot;开源在线 Markdown 编辑器&quot;,
+        },
+        {
+          cardSrc: &quot;https://github.com/validatorjs/validator.js&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220111000249.png&quot;,
+          cardName: &quot;validator.js&quot;,
+          cardContent:
+            &quot;表单验证库&quot;,
+        },
+      ],
+      // 其他
+      cardData7_99: [
+        {
+          id: &#39;7_99&#39;,
+          title: &#39;其他&#39;,
+          cardSrc: &quot;https://www.bootcss.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105000409.png&quot;,
+          cardName: &quot;BootStrap&quot;,
+          cardContent:
+            &quot;简洁、直观、强悍的前端开发框架，让web开发更迅速、简单&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.npmjs.cn/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105001006.png&quot;,
+          cardName: &quot;NPM&quot;,
+          cardContent:
+            &quot;NodeJS 包管理文档&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.angularjs.net.cn/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105001414.png&quot;,
+          cardName: &quot;AngularJS&quot;,
+          cardContent:
+            &quot;AngularJS是一款优秀的前端JS框架&quot;,
+        },
+        {
+          cardSrc: &quot;https://electronjs.org/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105001728.png&quot;,
+          cardName: &quot;Electron&quot;,
+          cardContent:
+            &quot;Electron 是一个赋力前端进行跨平台开发的框架,让开发人员使用 JavaScript，HTML 和 CSS 等前端技术构建跨平台的桌面应用&quot;,
+        },
+        {
+          cardSrc: &quot;https://caniuse.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105001759.png&quot;,
+          cardName: &quot;can i use&quot;,
+          cardContent:
+            &quot;前端常用网站了,查看不同属性和方法的兼容性&quot;,
+        },
+      ],
+      // 动态图表
+      cardData8: [
+        {
+          id: &#39;8&#39;,
+          cardSrc: &quot;https://www.echartsjs.com/examples/zh/index.html&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105014053.png&quot;,
+          cardName: &quot;Echarts&quot;,
+          cardContent:
+            &quot;百度开发的可定制的数据可视化图表，已经捐给Apache&quot;,
+        },
+        {
+          cardSrc: &quot;https://antv.vision/zh&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105014146.png&quot;,
+          cardName: &quot;AntV&quot;,
+          cardContent:
+            &quot;蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践&quot;,
+        },
+        {
+          cardSrc: &quot;https://d3js.org/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105014223.png&quot;,
+          cardName: &quot;D3&quot;,
+          cardContent:
+            &quot;用动态图形显示数据的JavaScript库&quot;,
+        },
+        {
+          cardSrc: &quot;https://threejs.org/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105014307.png&quot;,
+          cardName: &quot;ThreeJs&quot;,
+          cardContent:
+            &quot;运行在浏览器中的3D 引擎&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.highcharts.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105014337.png&quot;,
+          cardName: &quot;HighCharts&quot;,
+          cardContent:
+            &quot;兼容 IE6+、支持移动端、图表类型丰富的HTML5交互性图表库&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.chartjs.org/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105014412.png&quot;,
+          cardName: &quot;ChartJs&quot;,
+          cardContent:
+            &quot;基于 HTML5 的 JavaScript 图表库&quot;,
+        },
+        {
+          cardSrc: &quot;http://www.flotcharts.org/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105014448.png&quot;,
+          cardName: &quot;FlotCharts&quot;,
+          cardContent:
+            &quot;基于jQuery的Charts，Grafana就是用的它&quot;,
+        },
+      ],
+      // 图片图标
+      cardData9: [
+        {
+          id: &#39;9&#39;,
+          cardSrc: &quot;http://fontawesome.dashgame.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105014740.png&quot;,
+          cardName: &quot;fonta Wesome&quot;,
+          cardContent:
+            &quot;完美的图标字体库&quot;,
+        },
+        {
+          cardSrc: &quot;https://squoosh.app/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105014911.png&quot;,
+          cardName: &quot;Squoosh&quot;,
+          cardContent:
+            &quot;谷歌出品在线免费图片压缩工具神器&quot;,
+        },
+        {
+          cardSrc: &quot;http://zhitu.isux.us/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105014955.png&quot;,
+          cardName: &quot;智图&quot;,
+          cardContent:
+            &quot;腾讯出品，在线图片压缩，支持转成 webP 处理静态图片时候很好用&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.picdiet.com/zh-cn&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105015040.png&quot;,
+          cardName: &quot;Picdiet&quot;,
+          cardContent:
+            &quot;Picdiet是一款在线批量压缩图片神器，它不需要后端服务器或者API的支持，仅通过你的浏览器来压缩图片大小，这意味着它压缩图片极快并且不会导致隐私或敏感图片泄漏&quot;,
+        },
+        {
+          cardSrc: &quot;http://www.aigei.com/bgremover/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105015116.png&quot;,
+          cardName: &quot;Bgremover&quot;,
+          cardContent:
+            &quot;在线图片去底工具&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.photopea.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105015154.png&quot;,
+          cardName: &quot;Photopea&quot;,
+          cardContent:
+            &quot;网页版本 Photoshop，非常强大&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.iconfont.cn/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105015248.png&quot;,
+          cardName: &quot;Iconfont&quot;,
+          cardContent:
+            &quot;阿里妈妈MUX倾力打造的矢量图标管理、交流平台。设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用&quot;,
+        },
+        {
+          cardSrc: &quot;http://cssicon.space/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105015322.png&quot;,
+          cardName: &quot;Css Icon&quot;,
+          cardContent:
+            &quot;所有的 icon 都是纯 css 画的 缺点：icon 不够多&quot;,
+        },
+      ],
+      // CSS样式
+      cardData10: [
+        {
+          id: &#39;10&#39;,
+          cardSrc: &quot;http://sass.bootcss.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105015622.png&quot;,
+          cardName: &quot;SAAS&quot;,
+          cardContent:
+            &quot;Sass 是成熟、稳定、强大的 CSS 扩展语言&quot;,
+        },
+        {
+          cardSrc: &quot;https://stylus.bootcss.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105015650.png&quot;,
+          cardName: &quot;Stylus&quot;,
+          cardContent:
+            &quot;富于表现力、动态的、健壮的 CSS&quot;,
+        },
+        {
+          cardSrc: &quot;https://less.bootcss.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105015753.png&quot;,
+          cardName: &quot;Less&quot;,
+          cardContent:
+            &quot;给 CSS 加点料&quot;,
+        },
+        {
+          cardSrc: &quot;http://apps.eky.hk/css-triangle-generator/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105015906.png&quot;,
+          cardName: &quot;CSS riangle&quot;,
+          cardContent:
+            &quot;帮你快速用 css 做出三角形&quot;,
+        },
+        {
+          cardSrc: &quot;http://www.cssarrowplease.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105015951.png&quot;,
+          cardName: &quot;CSS Arrow&quot;,
+          cardContent:
+            &quot;帮你做对话框三角的&quot;,
+        },
+        {
+          cardSrc: &quot;hhttps://bennettfeely.com/image-effects/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020027.png&quot;,
+          cardName: &quot;CSS Effects&quot;,
+          cardContent:
+            &quot;图片CSS样式控制&quot;,
+        },
+        {
+          cardSrc: &quot;https://app.zeplin.io/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;zeplin&quot;,
+          cardContent:
+            &quot;前端和设计师神器，有标注、Style Guide、版本管理、简单的团队协作，重点是前端不用写css 了，复制就可以了&quot;,
+        },
+        {
+          cardSrc: &quot;hhttp://bennettfeely.com/clippy/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;clippy&quot;,
+          cardContent:
+            &quot;在线帮你使用 css clip-path 做出各种形状的图形&quot;,
+        },
+      ],
+      // 网站分析
+      cardData11: [
+        {
+          id: &#39;11&#39;,
+          cardSrc: &quot;https://tongji.baidu.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104224044.png&quot;,
+          cardName: &quot;百度统计&quot;,
+          cardContent:
+            &quot;基于百度大数据能力,实现全域数据自动化采集、融合多种模型算法,赋能企业深入分析洞察用户行为,以驱动用户运营策略优化、产品用户体验提升及全渠道归因最大化转化效果&quot;,
+        },
+        {
+          cardSrc: &quot;https://ziyuan.baidu.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220104224044.png&quot;,
+          cardName: &quot;百度资源&quot;,
+          cardContent:
+            &quot;百度搜索面向合作伙伴的官方平台，为开发者、内容创作者、站点管理者等伙伴，提供优化工具、数据、课程、Q&amp;A等服务，助力资源进入搜索，同时提供搜索项目合作机会，让优质资源脱颖而出&quot;,
+        },
+        {
+          cardSrc: &quot;https://developers.google.cn/analytics/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105214915.svg&quot;,
+          cardName: &quot;谷歌分析&quot;,
+          cardContent:
+            &quot;收集、配置并分析您的数据,助力您覆盖最理想的受众群体&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.aicesu.cn/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105214633.png&quot;,
+          cardName: &quot;爱测速&quot;,
+          cardContent:
+            &quot;谷歌网站测速 PageSpeed Insights - Google网页性能优化测试，全面分析提升网页加载速度与网站测试评分&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.boce.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105215329.svg&quot;,
+          cardName: &quot;BOCE&quot;,
+          cardContent:
+            &quot;拨测-免费的域名检测工具网-网站测速-ping检测-域名污染-域名被墙-dns查询-IPv6网站测试-路由跟踪查询-劫持检测&quot;,
+        },
+      ],
+      // 其它资源
+      cardData99: [
+        {
+          id: &#39;99&#39;,
+          cardSrc: &quot;https://github.com/fkling/astexplorer/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;astexplorer&quot;,
+          cardContent: &quot;一个在线 ast 生成器&quot;,
+        },
+        {
+          cardSrc: &quot;https://30secondsofcode.org/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;30 seconds of code&quot;,
+          cardContent:
+            &quot;收集了许多有用的代码小片段&quot;,
+        },
+        {
+          cardSrc: &quot;https://jex.im/regulex/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;jex&quot;,
+          cardContent:
+            &quot;正则可视化网站，配合上面的 Regular Expressions，写正则方便很多&quot;,
+        },
+        {
+          cardSrc: &quot;https://jsfiddle.net/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;jsfiddle&quot;,
+          cardContent:
+            &quot;在线运行代码网站 很不错，可惜要翻墙&quot;,
+        },
+        {
+          cardSrc: &quot;https://codepan.net/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;codepan&quot;,
+          cardContent:
+            &quot;在线运行代码网站 不用翻墙，可以自己部署&quot;,
+        },
+        {
+          cardSrc: &quot;https://fiddle.md/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;fiddle.md&quot;,
+          cardContent:
+            &quot;一个方便的在线共享 markdown 在线笔试题一般都用这个&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.jsdelivr.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;jsdelivr&quot;,
+          cardContent:
+            &quot;cdn 服务&quot;,
+        },
+        {
+          cardSrc: &quot;https://unpkg.com/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;unpkg&quot;,
+          cardContent:
+            &quot;常用的 cdn 服务&quot;,
+        },
+        {
+          cardSrc: &quot;https://coderpad.io/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;coderpad&quot;,
+          cardContent:
+            &quot;远程面试的神器，可以让面试者远程写代码 不过需要翻墙&quot;,
+        },
+        {
+          cardSrc: &quot;http://www.icode.live/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;icode&quot;,
+          cardContent:
+            &quot;有赞团队出品的 coderpad 可以互补，它不需要翻墙&quot;,
+        },
+        {
+          cardSrc: &quot;https://www.codeadvice.io/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;codeadvice&quot;,
+          cardContent:
+            &quot;又一个让面试者远程写代码的网址&quot;,
+        },
+        {
+          cardSrc: &quot;https://snipper.io/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;snipper&quot;,
+          cardContent:
+            &quot;一个代码协同的网站。你新建一个代码片段，然后把网址分享给其他人，就可以看到他们的实时编辑&quot;,
+        },
+        {
+          cardSrc: &quot;https://codesandbox.io/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;codesandbox&quot;,
+          cardContent:
+            &quot;一个可以在线编辑且提供在线 demo 的网站 支持 vue react angular 多种框架 神器&quot;,
+        },
+        {
+          cardSrc: &quot;https://tympanus.net/codrops/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;codrops&quot;,
+          cardContent:
+            &quot;上面的交互都非常酷炫&quot;,
+        },
+        {
+          cardSrc: &quot;https://bestofjs.org/&quot;,
+          cardImgSrc: &quot;https://cdn.jsdelivr.net/gh/Kele-Bingtang/static/img/tools/20220105020107.png&quot;,
+          cardName: &quot;bestofjs&quot;,
+          cardContent:
+            &quot;查看一个项目增长经历，Star 数变化的网站，辅助你判断这个库的质量 &quot;,
+        },
+
+      ],
+    };
+  },
+}
+</script>&gt; </div></div></main><footer class="VPDocFooter" data-v-8940c470 data-v-0d35f173><!--[--><!--]--><div class="edit-info" data-v-0d35f173><div class="edit-link" data-v-0d35f173><a class="VPLink link vp-external-link-icon no-icon edit-link-button" href="https://github.com/qqlcx5/blog/edit/teek/docs/01.导航/01.导航-资源导航.md" target="_blank" rel="noreferrer" data-v-0d35f173><!--[--><span class="vpi-square-pen edit-link-icon" data-v-0d35f173></span> 在 GitHub 上编辑此页<!--]--></a></div><div class="last-updated" data-v-0d35f173><p class="VPLastUpdated" data-v-0d35f173 data-v-c08ed73d>上次更新时间: <time datetime="2022-06-17T02:41:44.000Z" data-v-c08ed73d></time></p></div></div><!----></footer><!--[--><!--[--><!--[--><!--[--><!--]--><!--[--><!--[--><!--]--><div class="tk-article-update" style="display:none;"><div class="tk-article-update__title flx-align-center"><i class="tk-icon edit-icon" style="--icon-color-hover:var(--tk-theme-color);" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+    <path
+      fill="currentColor"
+      d="m199.04 672.64 193.984 112 224-387.968-193.92-112-224 388.032zm-23.872 60.16 32.896 148.288 144.896-45.696zM455.04 229.248l193.92 112 56.704-98.112-193.984-112-56.64 98.112zM104.32 708.8l384-665.024 304.768 175.936L409.152 884.8h.064l-248.448 78.336zm384 254.272v-64h448v64h-448z"
+    ></path>
+  </svg></i><a href="/@pages/archivesPage.html" class="hover-color" aria-label="最近更新">最近更新</a></div><ul><!--[--><li class="flx-center"><span class="tk-article-update--num" aria-hidden="true">01</span><div class="tk-article-update__content"><a href="/06.工具/02.Git/05.图解Git.html" class="flx-1 hover-color sle" aria-label="图解Git"><span class="tk-article-title" aria-label="文章标题"><!--v-if--><!--[--><!--[-->图解Git<!--]--><!--]--><!--v-if--></span></a><span class="tk-article-update__content--date">2022-05-10 23:30:59</span></div></li><li class="flx-center"><span class="tk-article-update--num" aria-hidden="true">02</span><div class="tk-article-update__content"><a href="/08.关于/03.关于-网站错误反馈.html" class="flx-1 hover-color sle" aria-label="关于 - 网站错误反馈"><span class="tk-article-title" aria-label="文章标题"><!--v-if--><!--[--><!--[-->关于 - 网站错误反馈<!--]--><!--]--><!--v-if--></span></a><span class="tk-article-update__content--date">2022-05-10 22:13:44</span></div></li><li class="flx-center"><span class="tk-article-update--num" aria-hidden="true">03</span><div class="tk-article-update__content"><a href="/08.关于/02.关于-赞赏的用途.html" class="flx-1 hover-color sle" aria-label="关于 - 赞赏❤️的用途"><span class="tk-article-title" aria-label="文章标题"><!--v-if--><!--[--><!--[-->关于 - 赞赏❤️的用途<!--]--><!--]--><!--v-if--></span></a><span class="tk-article-update__content--date">2022-05-10 21:46:33</span></div></li><li class="flx-center"><span class="tk-article-update--num" aria-hidden="true"></span><div class="tk-article-update__content"><a href="/@pages/archivesPage.html" class="flx-1 hover-color sle" aria-label="更多文章 &gt;"><span class="tk-article-title" aria-label="文章标题"><!--v-if--><!--[--><!--[-->更多文章 &gt;<!--]--><!--]--><!--v-if--></span></a><!--v-if--></div></li><!--]--></ul></div><!--[--><!--]--><!--]--><!--v-if--><!-- 评论区 --><!--[--><!--[--><!--]--><div class="tk--twikoo tk-layout__comment" id="tk-comment"><!-- KaTeX --><!--v-if--><div id="twikoo"></div><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.44/dist/twikoo.nocss.js" crossorigin="anonymous"></script></div><!--[--><!--]--><!--]--><!--]--><!--]--><!--]--></div></div></div><!--[--><!--]--></div></div><!----><!--[--><!--]--></div><!--]--></div>
+    
+    
+  </body>
+</html>
